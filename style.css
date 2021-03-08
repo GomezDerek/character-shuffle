@@ -3,6 +3,7 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  background-color: #993300;
 }
 
 h1 {
@@ -13,4 +14,11 @@ h1 {
 img {
   margin: auto;
   display: block;
+}
+
+#button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
