@@ -10,6 +10,10 @@ h1 {
   color: #FFB563;
   text-align: center;
 }
+
+#character-area {
+  background-color: #525174;
+}
 img {
   margin: auto;
   display: block;
@@ -25,9 +29,15 @@ img {
 button {
   background-color: #A9CBB7;
   border-color: #993300;
-  border: 5px;
-  border-radius: 25%;
+  
+  border-radius: 30px;
+  width: 125px;
+  height: 50px;
   
   text-align: center;
+  color: #993300;
+  font-size: 20px;
+  font-family: Candara, Cambria, sans-serif;
+  font-weight: bold;
   
 }
