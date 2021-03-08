@@ -80,12 +80,13 @@ button {
 }
 
 button:hover {
-  /*background-color: #3e8e41*/
+  color: rgb(106,96,73);
+  border: 5px solid rgb(106,96,73);
 }
 
 button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  color: rgb(106,96,73);
+  border: 5px solid rgb(106,96,73);
   transform: translateY(4px);
 }
 </
