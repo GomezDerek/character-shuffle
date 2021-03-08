@@ -15,7 +15,10 @@ body {
 }
 
 h1 {
-  color: #BEAC83;
+  color: rgb(106,96,73);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #BEAC83;
+  
   text-align: center;
   padding-top: 10px;
   margin-bottom: 0px; /*So the background combines with the character area's*/
@@ -94,5 +97,10 @@ h1, #character-area, #button-div {
 }
 
 .stat {
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: normal;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BEAC83;
 }
+
