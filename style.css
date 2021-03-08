@@ -20,7 +20,7 @@ h1 {
   margin-left: 25%;
   margin-right: 25%;
   */
-  height: 700px;
+  height: 500px;
 }
 img {
   margin: auto;
@@ -32,13 +32,14 @@ img {
   justify-content: center;
   align-items: center;
   /*margin-top: 50px;*/
+  margin-bottom: 50px;
   background-color: #0B0033;
+  height: 100px;
 }
 
 button {
   background-color: #FFB563;
-  border-color: white;
-  border-width: 4px;
+  border: 2px solid white;
   
   border-radius: 30px;
   width: 125px;
