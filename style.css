@@ -1,13 +1,18 @@
-/* CSS files add styling rules to your content */
+/*Alternative Color Palette
+https://coolors.co/ffb563-993300-a9cbb7-0b0033
+*/
 
 body {
   font-family: Candara, Cambria, sans-serif;
   margin: 2em;
   background-color: #993300;
+  background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/09/09/Cool-Geometry-pattern-design-Graphics-5363226-1-580x386.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-  color: #FFB563;
+  color: #BEAC83;
   text-align: center;
   background-color: #0B0033;
   margin-bottom: 0px; /*So the background combines with the character area's*/
@@ -23,8 +28,14 @@ h1 {
   height: 500px;
 }
 img {
+  /*for center align
   margin: auto;
   display: block;
+  */
+  /*for right align*/
+  position: absolute;
+  right: 25%;
+  margin-right: 2em;  
 }
 
 #button-div {
