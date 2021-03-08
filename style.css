@@ -9,10 +9,18 @@ body {
 h1 {
   color: #FFB563;
   text-align: center;
+  background-color: #0B0033;
+  margin-bottom: 0px; /*So the background combines with the character area's*/
 }
 
 #character-area {
-  background-color: #525174;
+  background-color: #0B0033;
+  margin-bottom: 0px;
+  /*
+  margin-left: 25%;
+  margin-right: 25%;
+  */
+  height: 700px;
 }
 img {
   margin: auto;
@@ -23,12 +31,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
+  background-color: #0B0033;
 }
 
 button {
-  background-color: #A9CBB7;
-  border-color: #993300;
+  background-color: #FFB563;
+  border-color: white;
+  border-width: 4px;
   
   border-radius: 30px;
   width: 125px;
@@ -39,5 +49,4 @@ button {
   font-size: 20px;
   font-family: Candara, Cambria, sans-serif;
   font-weight: bold;
-  
 }
