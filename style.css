@@ -48,6 +48,8 @@ img {
   right: 25%;
   margin-right: 2em;  
   float: right;
+  
+  object-fit: contain;
 }
 
 #button-div {
@@ -76,6 +78,17 @@ button {
   font-family: Candara, Cambria, sans-serif;
   font-weight: bold;
 }
+
+button:hover {
+  /*background-color: #3e8e41*/
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</
 
 h1, #character-area, #button-div {
   background-color: black;
