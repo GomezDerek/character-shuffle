@@ -6,4 +6,12 @@ let imageLinks = [
   "https://i.gifer.com/6XBs.gif" //LoZ NPC
 ];
 
-let displayCharacter = document.get
+
+let shuffleCharacter = () => {
+  console.log("shuffleCharacter called");
+  let characterDisplay = document.getElementById("character-display");
+  let randCharacter = imageLinks[ Math.floor(Math.random()*imageLinks.length)];
+  characterDisplay.src = randCharacter;
+}
+
+document.getElementById("shuffle-button").addEventListener("click", shuffleCharacter);
