@@ -50,6 +50,7 @@ img {
   float: right;
   
   object-fit: contain;
+  max-height: 500px;
 }
 
 #button-div {
