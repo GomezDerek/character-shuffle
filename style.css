@@ -1,14 +1,13 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: Candara, Cambria, sans-serif;
   margin: 2em;
   background-color: #993300;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  color: #FFB563;
   text-align: center;
 }
 img {
@@ -21,4 +20,14 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+}
+
+button {
+  background-color: #A9CBB7;
+  border-color: #993300;
+  border: 5px;
+  border-radius: 25%;
+  
+  text-align: center;
+  
 }
