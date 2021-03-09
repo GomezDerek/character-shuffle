@@ -15,6 +15,14 @@ let abilities = [
   "Horse Hooves"
 ];
 
+let backgrounds = [
+  "https://i.gifer.com/76YS.gif",
+  "https://j.gifs.com/KB6AD3.gif",
+  "https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/12/Double-Embers.gif?fit=750%2C353&quality=80&strip=all&ssl=1",
+  "https://thumbs.gfycat.com/TotalFilthyCaudata-max-1mb.gif",
+  "https://thumbs.gfycat.com/EnormousGracefulBunny-max-1mb.gif"
+];
+
 
 let shuffleCharacter = () => {
   console.log("shuffleCharacter called");
@@ -36,6 +44,10 @@ let randomizeStats = () => {
   document.getElementById("speed-Stat").innerHTML = newSpeedStat;
   document.getElementById("ability-Stat").innerHTML = newAbilityStat;
 }
+
+let randomizeBackground = () => {
+  let newBG = Math.floor(Math.random()*backgrounds.length);
+};
 
 let shuffleAll = () => {
   shuffleCharacter();
