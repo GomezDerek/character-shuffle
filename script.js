@@ -16,9 +16,13 @@ let shuffleCharacter = () => {
 
 let randomizeStats = () => {
   console.log("randomizing stats");
+  
+  let newAttackStat = Math.floor(Math.random()*)
+  
   let attackStat = document.getElementById("attack-Stat");
   let defenseStat = document.getElementById("defense-Stat");
   let abilityStat = document.getElementById("ability-Stat");
+  attackStat.innerH
 }
 
 document.getElementById("shuffle-button").addEventListener("click", shuffleCharacter);
