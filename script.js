@@ -16,11 +16,11 @@ let abilities = [
 ];
 
 let backgrounds = [
-  "https://i.gifer.com/76YS.gif",
-  "https://j.gifs.com/KB6AD3.gif",
-  "https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/12/Double-Embers.gif?fit=750%2C353&quality=80&strip=all&ssl=1",
-  "https://thumbs.gfycat.com/TotalFilthyCaudata-max-1mb.gif",
-  "https://thumbs.gfycat.com/EnormousGracefulBunny-max-1mb.gif"
+  "url('https://i.gifer.com/76YS.gif')",
+  "url('https://j.gifs.com/KB6AD3.gif')",
+  "url('https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/12/Double-Embers.gif?fit=750%2C353&quality=80&strip=all&ssl=1')",
+  "url('https://thumbs.gfycat.com/TotalFilthyCaudata-max-1mb.gif')",
+  "url('https://thumbs.gfycat.com/EnormousGracefulBunny-max-1mb.gif')"
 ];
 
 
@@ -47,11 +47,13 @@ let randomizeStats = () => {
 
 let randomizeBackground = () => {
   let newBG = Math.floor(Math.random()*backgrounds.length);
+  document.getElementById("frame").style.backgroundImage = backgrounds[newBG];
 };
 
 let shuffleAll = () => {
   shuffleCharacter();
   randomizeStats();
+  randomizeBackground();
 }
 
 document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
