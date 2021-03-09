@@ -6,6 +6,15 @@ let imageLinks = [
   "https://i.gifer.com/6XBs.gif" //LoZ NPC
 ];
 
+let abilities = [
+  "Morning Breath",
+  "Snake Summoning",
+  "The Grand Unfolding",
+  "Iron Skin",
+  "Mantis Arms",
+  ""
+];
+
 
 let shuffleCharacter = () => {
   console.log("shuffleCharacter called");
@@ -17,7 +26,9 @@ let shuffleCharacter = () => {
 let randomizeStats = () => {
   console.log("randomizing stats");
   
-  let newAttackStat = Math.floor(Math.random()*)
+  let newAttackStat = Math.floor(Math.random()*999);
+  let newDefenseStat = Math.floor(Math.random()*999);
+  let newAbilityStat
   
   let attackStat = document.getElementById("attack-Stat");
   let defenseStat = document.getElementById("defense-Stat");
