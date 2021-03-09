@@ -14,4 +14,11 @@ let shuffleCharacter = () => {
   characterDisplay.src = randCharacter;
 }
 
+let randomizeStats = () => {
+  console.log("randomizing stats");
+  let attackStat = document.getElementById("attack-Stat");
+  let defenseStat = document.getElementById("defense-Stat");
+  let abilityStat = document.getElementById("ability-Stat");
+}
+
 document.getElementById("shuffle-button").addEventListener("click", shuffleCharacter);
