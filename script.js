@@ -9,7 +9,7 @@ let imageLinks = [
 let abilities = [
   "Morning Breath",
   "Snake Summoning",
-  "The Grand Unfolding",
+  "Grand Unfolding",
   "Iron Skin",
   "Mantis Arms",
   "Horse Hooves"
@@ -28,10 +28,12 @@ let randomizeStats = () => {
   
   let newAttackStat = Math.floor(Math.random()*999);
   let newDefenseStat = Math.floor(Math.random()*999);
+  let newSpeedStat = Math.floor(Math.random()*999);
   let newAbilityStat = abilities[ Math.floor(Math.random()*abilities.length)];
   
   document.getElementById("attack-Stat").innerHTML = newAttackStat;
   document.getElementById("defense-Stat").innerHTML = newDefenseStat;
+  document.getElementById("speed-Stat").innerHTML = newSpeedStat;
   document.getElementById("ability-Stat").innerHTML = newAbilityStat;
 }
 
