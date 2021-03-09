@@ -12,7 +12,7 @@ let abilities = [
   "The Grand Unfolding",
   "Iron Skin",
   "Mantis Arms",
-  ""
+  "Horse Hooves"
 ];
 
 
@@ -28,12 +28,16 @@ let randomizeStats = () => {
   
   let newAttackStat = Math.floor(Math.random()*999);
   let newDefenseStat = Math.floor(Math.random()*999);
-  let newAbilityStat
+  let newAbilityStat = abilities[ Math.floor(Math.random()*abilities.length)];
   
-  let attackStat = document.getElementById("attack-Stat");
-  let defenseStat = document.getElementById("defense-Stat");
-  let abilityStat = document.getElementById("ability-Stat");
-  attackStat.innerH
+  document.getElementById("attack-Stat").innerHTML = newAttackStat;
+  document.getElementById("defense-Stat").innerHTML = newDefenseStat;
+  document.getElementById("ability-Stat").innerHTML = newAbilityStat;
 }
 
-document.getElementById("shuffle-button").addEventListener("click", shuffleCharacter);
+let shuffleAll = () => {
+  shuffleCharacter();
+  randomizeStats();
+}
+
+document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
