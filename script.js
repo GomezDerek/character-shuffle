@@ -1,3 +1,24 @@
+let head = [
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FHead-1.png?v=1615672267852",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FHead-2.png?v=1615672268034",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FHead-3.png?v=1615672268129",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FHead-4.png?v=1615672268659"
+];
+
+let torso = [
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-1.png?v=1615672268766",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-2.png?v=1615672269659",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-3.png?v=1615672269880",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-4.png?v=1615672270506"
+];
+
+let legs = [
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-1.png?v=1615672271138",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-2.png?v=1615672270217",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-3.png?v=1615672270616",
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-4.png?v=1615672270818"
+];
+
 let imageLinks = [
   "https://webstockreview.net/images/clipart-anchor-animated-5.gif",//skull girl
   "https://media2.giphy.com/media/VJBEwBbpz2XxhQpUuB/giphy.gif", //bearded Rafael
@@ -23,12 +44,47 @@ let backgrounds = [
   "url('https://thumbs.gfycat.com/EnormousGracefulBunny-max-1mb.gif')"
 ];
 
+let pre = [
+  "Iron",
+  "Bor",
+  "Salva",
+  "Calad",
+  "Yuss",
+  "Gylad"
+];
+
+let suf = [
+  "lance",
+  "us",
+  "assy",
+  "tore",
+  "ty",
+  "el"
+];
+
 
 let shuffleCharacter = () => {
   console.log("shuffleCharacter called");
   let characterDisplay = document.getElementById("character-display");
-  let randCharacter = imageLinks[ Math.floor(Math.random()*imageLinks.length)];
-  characterDisplay.src = randCharacter;
+  let legsDisplay = document.getElementById("legs-display");
+  let torsoDisplay = document.getElementById("torso-display");
+  let headDisplay = document.getElementById("head-display");
+  
+  let ranhead = Math.floor(Math.random() * head.length);
+  let rantorso = Math.floor(Math.random() * torso.length);
+  let ranlegs = Math.floor(Math.random() * legs.length);
+  
+  let headchar = head[ranhead];
+  let torsochar = torso[rantorso];
+  let legschar = legs[ranlegs];
+  headDisplay.src = headchar;
+  torsoDisplay.src = torsochar;
+  legsDisplay.src = legschar;
+  
+  let ranpre = Math.floor(Math.random() * pre.length);
+  let ransuf = Math.floor(Math.random() * suf.length);
+  
+  document.getElementById("full-Name").innerHTML = pre[ranpre] + suf[ransuf];
 }
 
 let randomizeStats = () => {
