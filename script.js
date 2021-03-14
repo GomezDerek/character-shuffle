@@ -33,7 +33,9 @@ let abilities = [
   "Grand Unfolding",
   "Iron Skin",
   "Mantis Arms",
-  "Horse Hooves"
+  "Horse Hooves",
+  "Enhanced Strength",
+  "Eye Lazers"
 ];
 
 let backgrounds = [
@@ -50,7 +52,9 @@ let pre = [
   "Salva",
   "Calad",
   "Yuss",
-  "Gylad"
+  "Gylad",
+  "Forr",
+  "Wal"
 ];
 
 let suf = [
@@ -59,17 +63,20 @@ let suf = [
   "assy",
   "tore",
   "ty",
-  "el"
+  "el",
+  "",
+  "est",
+  "ter"
 ];
 
 let lpre = [
-  "bees",
+  "Bees",
   "Hard",
   "Smith",
   "God",
   "Griff",
   "Lil",
-  
+  "Tromb"
 ];
 
 let lsuf = [
@@ -78,7 +85,8 @@ let lsuf = [
   "son",
   "frey",
   "in",
-  "villa"
+  "villa",
+  ""
 ];
 
 let shuffleCharacter = () => {
@@ -101,8 +109,10 @@ let shuffleCharacter = () => {
   
   let ranpre = Math.floor(Math.random() * pre.length);
   let ransuf = Math.floor(Math.random() * suf.length);
+  let lnpre = Math.floor(Math.random() * lpre.length);
+  let lnsuf = Math.floor(Math.random() * lsuf.length);
   
-  document.getElementById("full-Name").innerHTML = pre[ranpre] + suf[ransuf];
+  document.getElementById("full-Name").innerHTML = pre[ranpre] + suf[ransuf] + " " + lpre[lnpre] + lsuf[lnsuf];
 }
 
 let randomizeStats = () => {
