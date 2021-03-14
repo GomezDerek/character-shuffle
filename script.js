@@ -62,6 +62,24 @@ let suf = [
   "el"
 ];
 
+let lpre = [
+  "bees",
+  "Hard",
+  "Smith",
+  "God",
+  "Griff",
+  "Lil",
+  
+];
+
+let lsuf = [
+  "ley",
+  "don",
+  "son",
+  "frey",
+  "in",
+  "villa"
+];
 
 let shuffleCharacter = () => {
   console.log("shuffleCharacter called");
