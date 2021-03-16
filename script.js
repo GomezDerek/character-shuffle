@@ -109,6 +109,7 @@ let lsuf = [
   "frey",
   "in",
   "villa",
+  "ak",
   ""
 ];
 
