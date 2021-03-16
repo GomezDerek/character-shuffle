@@ -1,7 +1,7 @@
 let head = [
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-1.png?v=1615870467294",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-2.png?v=1615870551798",
-  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-3.png?v=1615870467473",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-3.png?v=1615871123852",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-4.png?v=1615870465800"
 ];
 
@@ -9,14 +9,16 @@ let torso = [
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-1.png?v=1615672268766",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-2.png?v=1615672269659",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-3.png?v=1615672269880",
-  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-4.png?v=1615672270506"
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-4.png?v=1615672270506",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FTorso-5.png?v=1615871441934"
 ];
 
 let legs = [
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-1.png?v=1615672271138",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-2.png?v=1615672270217",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-3.png?v=1615672270616",
-  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-4.png?v=1615672270818"
+  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-4.png?v=1615672270818",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FLeg-5.png?v=1615871640591"
 ];
 
 let hair = [
