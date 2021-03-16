@@ -1,8 +1,8 @@
 let head = [
-  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FHead-1.png?v=1615672267852",
-  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FHead-2.png?v=1615672268034",
-  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FHead-3.png?v=1615672268129",
-  "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FHead-4.png?v=1615672268659"
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-1.png?v=1615870467294",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-2.png?v=1615870551798",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-3.png?v=1615870467473",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-4.png?v=1615870465800"
 ];
 
 let torso = [
@@ -17,6 +17,19 @@ let legs = [
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-2.png?v=1615672270217",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-3.png?v=1615672270616",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-4.png?v=1615672270818"
+];
+
+let hair = [
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-1.png?v=1615870465229",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-2.png?v=1615870466206",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-3.png?v=1615870466410",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-4.png?v=1615870468335",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-5.png?v=1615870467056",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-6.png?v=1615870465091",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-7.png?v=1615870467197",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-8.png?v=1615870468435",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-9.png?v=1615870467723",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-10.png?v=1615870464381"
 ];
 
 let imageLinks = [
@@ -95,17 +108,22 @@ let shuffleCharacter = () => {
   let legsDisplay = document.getElementById("legs-display");
   let torsoDisplay = document.getElementById("torso-display");
   let headDisplay = document.getElementById("head-display");
+  let hairDisplay = document.getElementById("hair-display");
   
   let ranhead = Math.floor(Math.random() * head.length);
   let rantorso = Math.floor(Math.random() * torso.length);
   let ranlegs = Math.floor(Math.random() * legs.length);
+  let ranhair = Math.floor(Math.random() * hair.length);
   
   let headchar = head[ranhead];
   let torsochar = torso[rantorso];
   let legschar = legs[ranlegs];
+  let hairchar = hair[ranhair];
+  
   headDisplay.src = headchar;
   torsoDisplay.src = torsochar;
   legsDisplay.src = legschar;
+  hairDisplay.src = hairchar;
   
   let ranpre = Math.floor(Math.random() * pre.length);
   let ransuf = Math.floor(Math.random() * suf.length);
