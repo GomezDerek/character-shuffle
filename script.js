@@ -34,6 +34,14 @@ let hair = [
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-10.png?v=1615870464381"
 ];
 
+let weapon = [
+  "",
+  "",
+  "",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FWeapon-1.png?v=1615873003545",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FWeapon-2.png?v=1615873334505"
+];
+
 let imageLinks = [
   "https://webstockreview.net/images/clipart-anchor-animated-5.gif",//skull girl
   "https://media2.giphy.com/media/VJBEwBbpz2XxhQpUuB/giphy.gif", //bearded Rafael
@@ -111,21 +119,25 @@ let shuffleCharacter = () => {
   let torsoDisplay = document.getElementById("torso-display");
   let headDisplay = document.getElementById("head-display");
   let hairDisplay = document.getElementById("hair-display");
+  let weaponDisplay = document.getElementById("weapon-display");
   
   let ranhead = Math.floor(Math.random() * head.length);
   let rantorso = Math.floor(Math.random() * torso.length);
   let ranlegs = Math.floor(Math.random() * legs.length);
   let ranhair = Math.floor(Math.random() * hair.length);
+  let ranweapon = Math.floor(Math.random() * weapon.length);
   
   let headchar = head[ranhead];
   let torsochar = torso[rantorso];
   let legschar = legs[ranlegs];
   let hairchar = hair[ranhair];
+  let weaponchar = weapon[ranweapon];
   
   headDisplay.src = headchar;
   torsoDisplay.src = torsochar;
   legsDisplay.src = legschar;
   hairDisplay.src = hairchar;
+  weaponDisplay.src = weaponchar;
   
   let ranpre = Math.floor(Math.random() * pre.length);
   let ransuf = Math.floor(Math.random() * suf.length);
