@@ -14,7 +14,7 @@ var ACCESSORY;
 
 //images to be shuffled
 var HEAD;
-var EYES;
+var HAIR;
 var TORSO;
 var LEGS;
 var WEAPON_IMG;
@@ -80,7 +80,7 @@ function preload() {
   hand_img = loadImage(
     "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fgloves_01a.png?v=1615980491585"
   );
-  
+
   preloadCharacterAssets();
 }
 
@@ -104,10 +104,10 @@ function draw() {
   image(UI_Template, 0, 0);
   drawLabels();
 
-  if(shuffling) {
+  if (shuffling) {
     shuffleAll();
   }
-  
+
   drawCharacter();
   drawVariableText();
   drawStatBars();
@@ -231,15 +231,18 @@ function shuffleCharacter() {
 function drawCharacter() {
   let x = 26.5;
   let y = 155;
-  
+
   HAIR.resize(204, 250);
   image(HAIR, x, y);
+
   HEAD.resize(204, 250);
   image(HEAD, x, y);
-  
+
+  TORSO.resize(204, 250);
   image(TORSO, x, y);
+
+  LEGS.resize(204, 250);
   image(LEGS, x, y);
-  
 }
 
 function generateName() {
@@ -264,62 +267,62 @@ function generateEquipment() {
   }
 
   switch (weaponType) {
-  case "sword":
-    WEAPON = random(swords);
-    WEAPON_IMG = sword_img;
-    break;
+    case "sword":
+      WEAPON = random(swords);
+      WEAPON_IMG = sword_img;
+      break;
 
-  case "spear":
-    WEAPON = random(spears);
-    WEAPON_IMG = spear_img;
-    break;
+    case "spear":
+      WEAPON = random(spears);
+      WEAPON_IMG = spear_img;
+      break;
 
-  case "none":
-    WEAPON = "DEEZ HANDS";
-    WEAPON_IMG = hand_img;
-    break;
+    case "none":
+      WEAPON = "DEEZ HANDS";
+      WEAPON_IMG = hand_img;
+      break;
   }
 
   //armor
   switch (random(armor)) {
-  case "LEATHER":
-    ARMOR = "LEATHER ARMOR";
-    ARMOR_IMG = leather_img;
-    break;
+    case "LEATHER":
+      ARMOR = "LEATHER ARMOR";
+      ARMOR_IMG = leather_img;
+      break;
 
-  case "IRON":
-    ARMOR = "IRON ARMOR";
-    ARMOR_IMG = iron_img;
-    break;
+    case "IRON":
+      ARMOR = "IRON ARMOR";
+      ARMOR_IMG = iron_img;
+      break;
 
-  case "SAPPHIRE":
-    ARMOR = "CRYSTAL ARMOR";
-    ARMOR_IMG = sapphire_img;
-    break;
+    case "SAPPHIRE":
+      ARMOR = "CRYSTAL ARMOR";
+      ARMOR_IMG = sapphire_img;
+      break;
 
-  case "GOLD":
-    ARMOR = "GOLD ARMOR";
-    ARMOR_IMG = gold_img;
-    break;
+    case "GOLD":
+      ARMOR = "GOLD ARMOR";
+      ARMOR_IMG = gold_img;
+      break;
   }
-  
+
   //accessories
-  let accessoryType = random(["necklace", "ring", "spellBook"])
+  let accessoryType = random(["necklace", "ring", "spellBook"]);
   switch (accessoryType) {
-  case "necklace":
-    ACCESSORY = random(necklaces);
-    ACCESSORY_IMG = necklace_img;
-    break;
+    case "necklace":
+      ACCESSORY = random(necklaces);
+      ACCESSORY_IMG = necklace_img;
+      break;
 
-  case "ring":
-    ACCESSORY = random(rings);
-    ACCESSORY_IMG = ring_img;
-    break;
+    case "ring":
+      ACCESSORY = random(rings);
+      ACCESSORY_IMG = ring_img;
+      break;
 
-  case "spellBook":
-    ACCESSORY = random(spellBooks);
-    ACCESSORY_IMG = book_img;
-    break;
+    case "spellBook":
+      ACCESSORY = random(spellBooks);
+      ACCESSORY_IMG = book_img;
+      break;
   }
 }
 
@@ -327,11 +330,11 @@ function generateEquipment() {
 function drawIcons() {
   WEAPON_IMG.resize(36, 36);
   image(WEAPON_IMG, 258, 258);
-  
+
   ARMOR_IMG.resize(36, 36);
   image(ARMOR_IMG, 258, 303.7);
-  
-  ACCESSORY_IMG.resize(36,36);
+
+  ACCESSORY_IMG.resize(36, 36);
   image(ACCESSORY_IMG, 258, 349);
 }
 
@@ -339,28 +342,30 @@ function drawIcons() {
 function shuffleEffect() {
   shuffling = true;
   window.setTimeout(
-    () => shuffling = false, 
+    () => (shuffling = false),
     2000 //ms
   );
 }
 
 function preloadCharacterAssets() {
-  for(let i=0; i<head.length; i++) {
+  for (let i = 0; i < head.length; i++) {
     headImages[i] = loadImage(head[i]);
   }
-  
-  for(let i=0; i<torso.length; i++) {
+
+  for (let i = 0; i < torso.length; i++) {
     torsoImages[i] = loadImage(torso[i]);
   }
-  
-  for(let i=0; i<legs.length; i++) {
+
+  for (let i = 0; i < legs.length; i++) {
     legImages[i] = loadImage(legs[i]);
   }
-  
-  for(let i=0; i<hair.length; i++) {
+
+  for (let i = 0; i < hair.length; i++) {
     hairImages[i] = loadImage(hair[i]);
   }
 }
 
 //document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
-document.getElementById("shuffle-button").addEventListener("click", shuffleEffect);
+document
+  .getElementById("shuffle-button")
+  .addEventListener("click", shuffleEffect);
