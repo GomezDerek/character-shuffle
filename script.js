@@ -229,19 +229,21 @@ function shuffleCharacter() {
 }
 
 function drawCharacter() {
-  let x = 26.5;
-  let y = 155;
+  let x = -50;
+  let y = 0;
+  let width = 306;
+  let height = 375;
 
-  HAIR.resize(204, 250);
-  image(HAIR, x, y);
-
-  HEAD.resize(204, 250);
+  HEAD.resize(0, height);
   image(HEAD, x, y);
 
-  TORSO.resize(204, 250);
+  HAIR.resize(0, height);
+  image(HAIR, x, y);
+
+  TORSO.resize(0, height);
   image(TORSO, x, y);
 
-  LEGS.resize(204, 250);
+  LEGS.resize(0, height);
   image(LEGS, x, y);
 }
 
