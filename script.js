@@ -55,9 +55,9 @@ function drawLabels() {
   text("DEFENSE:", 262, 132.5);
   text("SPEED:", 262, 185);
   
-  text("WEAPON NAME:", 31H0, 270);
-  text("ARMOR NAME:", 350, 300);
-  text("ACCESSORY NAME:", 350, 330);
+  text("WEAPON NAME", 310, 275);
+  text("ARMOR NAME", 310, 321);
+  text("ACCESSORY NAME", 310, 367);
 }
 
 function useTempVariables() {
@@ -96,3 +96,11 @@ function drawVariableText() {
   text(DEFENSE, 262, 152.7);
   text(SPEED, 262, 205.9);
 }
+
+function drawStatBars() {
+  let attackBar;
+  let defenseBar;
+  let 
+  
+}
+
