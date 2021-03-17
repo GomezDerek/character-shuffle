@@ -41,18 +41,37 @@ function preload() {
   font = loadFont(
     "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fmonaco.ttf?v=1615959404499"
   );
-  
-  sword_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fsword_02b.png?v=1615980533861");
-  spear_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fstaff_01e.png?v=1615980573580");
-  ring_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fring_02b.png?v=1615980624386");
-  necklace_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fnecklace_02b.png?v=1615980664799");
-  book_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fbook_01g.png?v=1615980684120");
-  leather_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01a.png?v=1615981168385");
-  iron_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01b.png?v=1615981172839");
-  sapphire_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01c.png?v=1615981172555");
-  gold_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01d.png?v=1615981172706");
-  hand_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fgloves_01a.png?v=1615980491585");
-  
+
+  sword_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fsword_02b.png?v=1615980533861"
+  );
+  spear_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fstaff_01e.png?v=1615980573580"
+  );
+  ring_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fring_02b.png?v=1615980624386"
+  );
+  necklace_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fnecklace_02b.png?v=1615980664799"
+  );
+  book_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fbook_01g.png?v=1615980684120"
+  );
+  leather_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01a.png?v=1615981168385"
+  );
+  iron_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01b.png?v=1615981172839"
+  );
+  sapphire_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01c.png?v=1615981172555"
+  );
+  gold_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01d.png?v=1615981172706"
+  );
+  hand_img = loadImage(
+    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fgloves_01a.png?v=1615980491585"
+  );
 }
 
 function setup() {
@@ -64,17 +83,16 @@ function setup() {
 
   textFont(font);
   textAlign(LEFT, CENTER);
-  
+
   image(UI_Template, 0, 0);
   drawLabels();
   useTempVariables();
-
 }
 
 function draw() {
   background("#facade");
   image(UI_Template, 0, 0);
-  drawLabels();  
+  drawLabels();
 
   drawVariableText();
   drawStatBars();
@@ -103,7 +121,7 @@ function useTempVariables() {
   WEAPON = "WEAPON NAME";
   ARMOR = "ARMOR NAME";
   ACCESSORY = "ACCESSORY NAME";
-  
+
   generateEquipment();
   //images to be shuffled
   /*
@@ -207,26 +225,22 @@ function generateName() {
 }
 
 function generateEquipment() {
-  
   //weapons
   let weaponType;
   //15% chance you have no weapon
-  if(Math.random() * 10 < 1.5) {
+  if (Math.random() * 10 < 1.5) {
     weaponType = "none";
-    
-  }
-  else {
+  } else {
     let weaponTypes = ["sword", "spear"];
     weaponType = random(weaponTypes);
   }
-  
-  switch(weaponType) {
-  
+
+  switch (weaponType) {
   case "sword":
     WEAPON = random(swords);
     WEAPON_IMG = sword_img;
     break;
-  
+
   case "spear":
     WEAPON = random(spears);
     WEAPON_IMG = spear_img;
@@ -237,33 +251,64 @@ function generateEquipment() {
     WEAPON_IMG = hand_img;
     break;
   }
-  
+
   //armor
-  switch(random(armor)) {
+  switch (random(armor)) {
+  case "LEATHER":
+    ARMOR = "LEATHER ARMOR";
+    ARMOR_IMG = leather_img;
+    break;
+
+  case "IRON":
+    ARMOR = "IRON ARMOR";
+    ARMOR_IMG = iron_img;
+    break;
+
+  case "SAPPHIRE":
+    ARMOR = "SAPPHIRE ARMOR";
+    ARMOR_IMG = sapphire_img;
+    break;
+
+  case "GOLD":
+    ARMOR = "GOLD ARMOR";
+    ARMOR_IMG = gold_img;
+    break;
+  }
   
-    case "LEATHER":
-      ARMOR = "LEATHER";
-      break;
-      
-    case "IRON":
-      ARMOR = "IRON";
-      break;
-    
-    case "SAPPHIRE";
-      ARMOR = 'SAPPHIRE';
-      break;
-    
-    case "GOLD":
-      ARMOR = 'GOLD';
-      break;
+  //accessories
+  let accessoryType = random(["necklace", "ring", ""])
+  switch (random(accessories)) {
+  case "NECKLACS":
+    ACCESSORY = "NECKLACS";
+    ACCESSORY_IMG = necklace_img;
+    break;
+
+  case "RING":
+    ACCESSORY = "RING";
+    ACCESSORY_IMG = ring_img;
+    break;
+
+  case "SAPPHIRE":
+    ACCESSORY = "SAPPHIRE";
+    ACCESSORY_IMG = sapphire_img;
+    break;
+
+  case "GOLD":
+    ACCESSORY = "GOLD";
+    ACCESSORY_IMG = gold_img;
+    break;
   }
 }
 
 function drawIcons() {
-  //weapon
   WEAPON_IMG.resize(36, 36);
   image(WEAPON_IMG, 258, 258);
   
+  ARMOR_IMG.resize(36, 36);
+  image(ARMOR_IMG, 258, 303.7);
+  
+  ACCESSORY_IMG.resize(36,36);
+  image(ACCESSORY_IMG, 258, 349);
 }
 
 document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
