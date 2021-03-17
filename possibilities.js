@@ -129,18 +129,18 @@ var swords = [
   "LONG SWORD",
   "DEMON BLADE",
   "GOBLIN HUNTER",
-  "HUNTING KNIFE"
-  "OBSIDIAN CLUB"
+  "HUNTING KNIFE",
+  "OBSIDIAN BLADE",
+  "SABRE"
 ];
 var spears = [
   "STICK",
   "JAVELIN",
-  "SPARTAN SPEAR",
+  "CORDED SPEAR",
   "HUNTING SPEAR",
   "POINTY POLE",
   "LANCE",
-  
-  
+  "HARPOON"
 ];
 var weapons = [swords, spears];
 
