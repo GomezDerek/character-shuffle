@@ -60,7 +60,7 @@ function useTempVariables() {
   ATTACK = Math.floor(Math.random() * 999);
   DEFENSE = 999;
   SPEED = 333;
-  Weapon Name
+  //Weapon Name;
   
 
   //images to be shuffled
