@@ -21,6 +21,18 @@ var WEAPON_TYPE;
 var ARMOR_TYPE;
 var ACCESSORY_TYPE;
 
+//specific image names
+var sword_img;
+var spear_img;
+
+var ring_img;
+var necklace_img;
+var book_img;
+
+var leather_img;
+var iron_img;
+var sapphite-
+
 function preload() {
   UI_Template = loadImage(
     "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FBlank%20UI.png?v=1615957385261"
@@ -28,6 +40,8 @@ function preload() {
   font = loadFont(
     "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fmonaco.ttf?v=1615959404499"
   );
+  
+  
 }
 
 function setup() {
