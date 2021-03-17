@@ -48,6 +48,9 @@ function drawLabels() {
   text("ATTACK:", 262, 80);
   text("DEFENSE:", 262, 132.5);
   text("SPEED:", 262, 185);
+  text("SPEED:", 350, 270);
+  text("SPEED:", 350, 300);
+  text("SPEED:", 350, 330);
 }
 
 function useTempVariables() {
@@ -57,6 +60,8 @@ function useTempVariables() {
   ATTACK = Math.floor(Math.random() * 999);
   DEFENSE = 999;
   SPEED = 333;
+  Weapon Name
+  
 
   //images to be shuffled
   /*
