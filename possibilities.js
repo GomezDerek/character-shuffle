@@ -124,8 +124,24 @@ var lsuf = [
   ""
 ];
 
-var swords = [];
-var spears = [];
+var swords = [ 
+  "RAPIER",
+  "LONG SWORD",
+  "DEMON BLADE",
+  "GOBLIN HUNTER",
+  "HUNTING KNIFE"
+  "OBSIDIAN CLUB"
+];
+var spears = [
+  "STICK",
+  "JAVELIN",
+  "SPARTAN SPEAR",
+  "HUNTING SPEAR",
+  "POINTY POLE",
+  "LANCE",
+  
+  
+];
 var weapons = [swords, spears];
 
 var armor = [];
@@ -150,5 +166,6 @@ var classes = [
   "ANAESTHESIOLOGIST",
   "WRESTLER",
   "POET",
-  "WITCH"
+  "WITCH",
+  "LIZARD TAMER"
 ];
