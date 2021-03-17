@@ -60,7 +60,7 @@ function drawLabels() {
 
 //assign these values in the meantime, before we implement the shuffle button
 function useTempVariables() {
-  NAME = "CHARACTER NAME";
+  NAME = generateName();
   CLASS = "CLASS";
   ABILITY = "ABILITY";
   ATTACK = Math.floor(Math.random() * 999);
@@ -137,4 +137,37 @@ function assignBarColor(statNum) {
   else {
     return "green";
   }
+}
+
+//this shuffles the character's assets and everything else
+function shuffleAll() {
+  shuffleCharacter();
+ 
+  //generate name
+  NAME = generateName();
+  
+  //generate class
+  
+  //generate ability
+  
+  //generate stats
+  
+  //generate equipment
+  
+  
+}
+
+//TODO: add code to shuffle the character art
+function shuffleCharacter() {
+
+}
+
+function generateName() {
+  let ranpre = Math.floor(Math.random() * pre.length);
+  let ransuf = Math.floor(Math.random() * suf.length);
+  let lnpre = Math.floor(Math.random() * lpre.length);
+  let lnsuf = Math.floor(Math.random() * lsuf.length);
+
+  let fullName = pre[ranpre] + suf[ransuf] + " " + lpre[lnpre] + lsuf[lnsuf];
+  return fullName;
 }
