@@ -102,7 +102,8 @@ function useTempVariables() {
   WEAPON = "WEAPON NAME";
   ARMOR = "ARMOR NAME";
   ACCESSORY = "ACCESSORY NAME";
-
+  
+  generateEquipment();
   //images to be shuffled
   /*
   HEAD;
@@ -225,7 +226,7 @@ function generateEquipment() {
     break;
   case "spear":
     WEAPON = random(spears);
-    WEAPOM_IMG = spear_img;
+    WEAPON_IMG = spear_img;
     break;
   case "none":
     WEAPON = "DEEZ HANDS";
@@ -234,9 +235,10 @@ function generateEquipment() {
   }
 }
 
-drawIcons() {
+function drawIcons() {
   //weapon
-  image(WEAPON+);
+  WEAPON_IMG.resize(36, 36);
+  image(WEAPON_IMG, 258, 258);
   
 }
 
