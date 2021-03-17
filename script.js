@@ -91,8 +91,6 @@ function setup() {
   noStroke();
   noSmooth();
 
-  background("#facade");
-
   textFont(font);
   textAlign(LEFT, CENTER);
 
@@ -379,6 +377,10 @@ function preloadCharacterAssets() {
    for (let i = 0; i < weapon.length; i++) {
     holdingImages[i] = loadImage(weapon[i]);
   } 
+}
+
+function bounceAnimation() {
+  //HEAD HAIR TORSO 
 }
 
 //document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
