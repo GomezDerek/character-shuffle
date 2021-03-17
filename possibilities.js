@@ -63,13 +63,23 @@ var weapon = [
 
 var abilities = [
   "Morning Breath",
-  "Snake Summoning",
+  "Summoning",
   "Grand Unfolding",
   "Iron Skin",
   "Mantis Arms",
   "Horse Hooves",
   "Enhanced Strength",
-  "Eye Lazers"
+  "Eye Lazers",
+  "Insight",
+  "Stealth",
+  "Disrespect",
+  "Overgrowth",
+  "Charm",
+  "Regeneration",
+  "Night Vision",
+  "Dizzy",
+  'Eagle Eyes',
+  ""
 ];
 
 var backgrounds = [
@@ -164,7 +174,7 @@ var rings = [
   "ROYAL RING"
 ];
 var necklaces = [
-  "ENCHANTED NECKLACE",
+  "MAGIC NECKLACE",
   "MYSTIC AMULET",
   "DOG TAG",
   "HOLY ROSARY",

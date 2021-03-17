@@ -137,7 +137,7 @@ function drawVariableText() {
   textSize(43);
   text(NAME, 22.5, 42);
 
-  fill("#FFFFFF88"); //switch colors for class and ability
+  fill("#00000088"); //switch colors for class and ability
 
   textSize(33);
   text(CLASS, 22.5, 77.4);
@@ -265,7 +265,7 @@ function generateEquipment() {
     break;
 
   case "SAPPHIRE":
-    ARMOR = "SAPPHIRE ARMOR";
+    ARMOR = "CRYSTAL ARMOR";
     ARMOR_IMG = sapphire_img;
     break;
 
@@ -288,9 +288,9 @@ function generateEquipment() {
     ACCESSORY_IMG = ring_img;
     break;
 
-  case "spellbook":
+  case "spellBook":
     ACCESSORY = random(spellBooks);
-    ACCESSORY_IMG = sapphire_img;
+    ACCESSORY_IMG = book_img;
     break;
   }
 }
