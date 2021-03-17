@@ -31,7 +31,7 @@ let hair = [
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-7.png?v=1615870467197",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-8.png?v=1615870468435",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-9.png?v=1615870467723",
-  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-10.png?v=1615870464381"
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-10.png?v=1615870464381",
 ];
 
 let weapon = [
