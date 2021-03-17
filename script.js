@@ -17,9 +17,9 @@ var HEAD;
 var EYES;
 var TORSO;
 var LEGS;
-var WEAPON_TYPE;
-var ARMOR_TYPE;
-var ACCESSORY_TYPE;
+var WEAPON_IMG;
+var ARMOR_IMG;
+var ACCESSORY_IMG;
 
 //specific image names
 //equipment
@@ -48,9 +48,9 @@ function preload() {
   necklace_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fnecklace_02b.png?v=1615980664799");
   book_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fbook_01g.png?v=1615980684120");
   leather_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01a.png?v=1615981168385");
-  iron_img = loadImage("");
-  sapphire_img = loadImage("");
-  gold_img = loadImage("");
+  iron_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01b.png?v=1615981172839");
+  sapphire_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01c.png?v=1615981172555");
+  gold_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01d.png?v=1615981172706");
   hand_img = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fgloves_01a.png?v=1615980491585");
   
 }
@@ -77,6 +77,7 @@ function draw() {
 
   drawVariableText();
   drawStatBars();
+  drawIcons();
 }
 
 //draw stat labels (unchangeable)
@@ -188,11 +189,6 @@ function shuffleAll() {
 
   //generate equipment
   generateEquipment();
-  
-  //weapon
-
-  
-  
 }
 
 //TODO: add code to shuffle the character art
@@ -211,27 +207,37 @@ function generateName() {
 function generateEquipment() {
   
   //weapons
+  let weaponType;
   //15% chance you have no weapon
   if(Math.random() * 10 < 1.5) {
-    WEAPON_TYPE = "none";
+    weaponType = "none";
     
   }
   else {
     let weaponTypes = ["sword", "spear"];
-    WEAPON_TYPE = random(weaponTypes);
+    weaponType = random(weaponTypes);
   }
   
-  switch(WEAPON_TYPE) {
+  switch(weaponType) {
   case "sword":
     WEAPON = random(swords);
+    WEAPON_IMG = sword_img;
     break;
   case "spear":
     WEAPON = random(spears);
+    WEAPOM_IMG = spear_img;
     break;
   case "none":
     WEAPON = "DEEZ HANDS";
+    WEAPON_IMG = hand_img;
     break;
   }
+}
+
+drawIcons() {
+  //weapon
+  image(WEAPON+);
+  
 }
 
 document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
