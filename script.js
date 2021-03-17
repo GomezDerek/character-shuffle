@@ -32,21 +32,25 @@ function preload() {
 
 function setup() {
   createCanvas(500, 500);
+  
+  background("#facade");
+
 
   textFont(font);
   textAlign(LEFT, CENTER);
-}
-
-function draw() {
-  background("#facade");
-
   image(UI_Template, 0, 0);
   drawLabels();
-
   useTempVariables();
   drawVariableText();
   drawStatBars();
 }
+
+/*function draw() {
+  background("#facade");
+
+  image(UI_Template, 0, 0);
+  drawLabels();
+}*/
 
 //draw stat labels (unchangeable)
 function drawLabels() {
