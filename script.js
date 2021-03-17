@@ -379,8 +379,10 @@ function preloadCharacterAssets() {
   } 
 }
 
-function bounceAnimation() {
-  //HEAD HAIR TORSO 
+function bounceAnimation(asset) {
+  //HEAD HAIR TORSO
+  let bounce = 2*sin((PI*2* millis()) / 45.0)
+  
 }
 
 //document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
