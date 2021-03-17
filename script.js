@@ -36,7 +36,7 @@ function draw() {
 
   image(UI_Template, 0, 0);
   drawLabels();
-  
+
   useTempVariables();
   drawVariableText();
 }
@@ -45,16 +45,16 @@ function drawLabels() {
   //stats
   textSize(28);
   strokeWeight(1);
-  text("ATTACK", 262, 80);
-  text("DEFENSE", 262, 132.5);
-  text("SPEED", 262, 185);
+  text("ATTACK:", 262, 80);
+  text("DEFENSE:", 262, 132.5);
+  text("SPEED:", 262, 185);
 }
 
 function useTempVariables() {
   NAME = "CHARACTER NAME";
   CLASS = "CLASS";
   ABILITY = "ABILITY";
-  ATTACK = 666;
+  ATTACK = Math.floor(Math.random() * 999);
   DEFENSE = 999;
   SPEED = 333;
 
@@ -68,24 +68,19 @@ function useTempVariables() {
 }
 
 function drawVariableText() {
-  //name 
   textSize(43);
   text(NAME, 22.5, 42);
-  
-  //class
-  fill("white"); //draw this text in white
+
+  fill("white"); //switch to white
+
   textSize(33);
   text(CLASS, 22.5, 77.4);
-  
-  //ability
   text(ABILITY, 50, 100);
+
   fill("black"); //switch back to black
-  
-  //attack
-  
-  
-  //defense
-  
-  //speed
-  
+
+  text(28);
+  text(ATTACK, 262, 102.5);
+  text(DEFENSE, 262, 152.7);
+  text(SPEED, 262, 205.9);
 }
