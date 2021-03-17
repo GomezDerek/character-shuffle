@@ -73,13 +73,14 @@ var abilities = [
   "Insight",
   "Stealth",
   "Disrespect",
-  "Overgrowth",
+  "Overgrown",
   "Charm",
   "Regeneration",
   "Night Vision",
   "Dizzy",
   'Eagle Eyes',
-  ""
+  "Untouchable",
+  "Ambidextrous"
 ];
 
 var backgrounds = [
@@ -193,9 +194,10 @@ var spellBooks = [
   "LIGHTNING TOME",
   "FIRE TOME",
   "CAR MANUAL",
-  "INSTRUCTION MANUAL",
+  "INSTRUCTIONS",
   "ADVENTURE GUIDE",
-  "UNDERWORLD BROCHURE"
+  "HELL'S BROCHURE",
+  "LOVE LETTER"
 ]
 var accesories = [rings, necklaces, spellBooks];
 

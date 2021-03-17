@@ -34,6 +34,8 @@ var sapphire_img;
 var gold_img;
 var hand_img;
 
+var shuffling = false;
+
 function preload() {
   UI_Template = loadImage(
     "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FBlank%20UI.png?v=1615957385261"
@@ -94,6 +96,10 @@ function draw() {
   image(UI_Template, 0, 0);
   drawLabels();
 
+  if(shuffling) {
+    shuffleAll();
+  }
+  
   drawVariableText();
   drawStatBars();
   drawIcons();
