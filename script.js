@@ -1,15 +1,13 @@
-/* exported setup, draw */
-
 var UI_Template;
-
+var font;
 
 //text/numbers to be shuffled
 var NAME;
 var CLASS;
 var ABILITY;
-var ATK;
-var DEF;
-var SPD
+var ATTACK;
+var DEFENSE;
+var SPEED;
 
 //images to be shuffled
 var HEAD;
@@ -19,14 +17,25 @@ var LEGS;
 
 function preload() {
   UI_Template = loadImage("https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FBlank%20UI.png?v=1615957385261");
+  font = loadFont('https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fmonaco.ttf?v=1615959404499');
 }
 
 function setup() {
   createCanvas(500, 500);
+  
+  //textFont(font);
+  //textSize(fontsize);
+  textAlign(LEFT, CENTER);
 }
 
 function draw() {
   background("#facade");
   
   image(UI_Template, 0, 0);
+  drawTemplateText();
+}
+
+function drawTemplateText() {
+  let textColor = "black";
+  
 }

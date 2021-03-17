@@ -2,7 +2,14 @@ let head = [
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-1.png?v=1615870467294",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-2.png?v=1615870551798",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-3.png?v=1615871123852",
-  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-4.png?v=1615870465800"
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-4.png?v=1615870465800",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-5.png?v=1615957736109",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-6.png?v=1615957736109",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-7.png?v=1615957736337",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-8.png?v=1615957736565",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-9.png?v=1615957736766",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-10.png?v=1615957737003",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-11.png?v=1615957737292"
 ];
 
 let torso = [
@@ -10,7 +17,10 @@ let torso = [
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-2.png?v=1615672269659",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-3.png?v=1615672269880",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FTorso-4.png?v=1615672270506",
-  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FTorso-5.png?v=1615871441934"
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FTorso-5.png?v=1615871441934",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FTorso-6.png?v=1615957746218",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FTorso-7.png?v=1615957746287",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FTorso-8.png?v=1615957746458"
 ];
 
 let legs = [
@@ -18,7 +28,10 @@ let legs = [
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-2.png?v=1615672270217",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-3.png?v=1615672270616",
   "https://cdn.glitch.com/078a68bb-ab35-403a-9d72-f67413aaa3d3%2FLeg-4.png?v=1615672270818",
-  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FLeg-5.png?v=1615871640591"
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FLeg-5.png?v=1615871640591",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FLegs-6.png?v=1615957750777",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FLegs-7.png?v=1615957750995",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FLegs-8.png?v=1615957751205"
 ];
 
 let hair = [
@@ -32,6 +45,10 @@ let hair = [
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-8.png?v=1615870468435",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-9.png?v=1615870467723",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-10.png?v=1615870464381",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-11.png?v=1615957676032",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-12.png?v=1615957675957",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-13.png?v=1615957676083",
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-14.png?v=1615957676346"
 ];
 
 let weapon = [
@@ -43,10 +60,10 @@ let weapon = [
 ];
 
 let imageLinks = [
-  "https://webstockreview.net/images/clipart-anchor-animated-5.gif",//skull girl
+  "https://webstockreview.net/images/clipart-anchor-animated-5.gif", //skull girl
   "https://media2.giphy.com/media/VJBEwBbpz2XxhQpUuB/giphy.gif", //bearded Rafael
-  "https://pa1.narvii.com/6777/1a49e450c41958e1b344c2a3ecbcccc0a3ce98d5_hq.gif",//FNAF Chica
-  "https://cdna.artstation.com/p/assets/images/images/019/435/536/original/vitoria-maxwell-mariana-cartoon-charlie-animation.gif?1563469729",//px succubis/necromancer
+  "https://pa1.narvii.com/6777/1a49e450c41958e1b344c2a3ecbcccc0a3ce98d5_hq.gif", //FNAF Chica
+  "https://cdna.artstation.com/p/assets/images/images/019/435/536/original/vitoria-maxwell-mariana-cartoon-charlie-animation.gif?1563469729", //px succubis/necromancer
   "https://i.gifer.com/6XBs.gif" //LoZ NPC
 ];
 
@@ -69,49 +86,13 @@ let backgrounds = [
   "url('https://thumbs.gfycat.com/EnormousGracefulBunny-max-1mb.gif')"
 ];
 
-let pre = [
-  "Iron",
-  "Bor",
-  "Salva",
-  "Calad",
-  "Yuss",
-  "Gylad",
-  "Forr",
-  "Wal"
-];
+let pre = ["Iron", "Bor", "Salva", "Calad", "Yuss", "Gylad", "Forr", "Wal"];
 
-let suf = [
-  "lance",
-  "us",
-  "assy",
-  "tore",
-  "ty",
-  "el",
-  "",
-  "est",
-  "ter"
-];
+let suf = ["lance", "us", "assy", "tore", "ty", "el", "", "est", "ter"];
 
-let lpre = [
-  "Bees",
-  "Hard",
-  "Smith",
-  "God",
-  "Griff",
-  "Lil",
-  "Tromb"
-];
+let lpre = ["Bees", "Hard", "Smith", "God", "Griff", "Lil", "Tromb"];
 
-let lsuf = [
-  "ley",
-  "don",
-  "son",
-  "frey",
-  "in",
-  "villa",
-  "ak",
-  ""
-];
+let lsuf = ["ley", "don", "son", "frey", "in", "villa", "ak", ""];
 
 let shuffleCharacter = () => {
   console.log("shuffleCharacter called");
@@ -121,49 +102,50 @@ let shuffleCharacter = () => {
   let headDisplay = document.getElementById("head-display");
   let hairDisplay = document.getElementById("hair-display");
   let weaponDisplay = document.getElementById("weapon-display");
-  
+
   let ranhead = Math.floor(Math.random() * head.length);
   let rantorso = Math.floor(Math.random() * torso.length);
   let ranlegs = Math.floor(Math.random() * legs.length);
   let ranhair = Math.floor(Math.random() * hair.length);
   let ranweapon = Math.floor(Math.random() * weapon.length);
-  
+
   let headchar = head[ranhead];
   let torsochar = torso[rantorso];
   let legschar = legs[ranlegs];
   let hairchar = hair[ranhair];
   let weaponchar = weapon[ranweapon];
-  
+
   headDisplay.src = headchar;
   torsoDisplay.src = torsochar;
   legsDisplay.src = legschar;
   hairDisplay.src = hairchar;
   weaponDisplay.src = weaponchar;
-  
+
   let ranpre = Math.floor(Math.random() * pre.length);
   let ransuf = Math.floor(Math.random() * suf.length);
   let lnpre = Math.floor(Math.random() * lpre.length);
   let lnsuf = Math.floor(Math.random() * lsuf.length);
-  
-  document.getElementById("full-Name").innerHTML = pre[ranpre] + suf[ransuf] + " " + lpre[lnpre] + lsuf[lnsuf];
-}
+
+  document.getElementById("full-Name").innerHTML =
+    pre[ranpre] + suf[ransuf] + " " + lpre[lnpre] + lsuf[lnsuf];
+};
 
 let randomizeStats = () => {
   console.log("randomizing stats");
-  
-  let newAttackStat = Math.floor(Math.random()*999);
-  let newDefenseStat = Math.floor(Math.random()*999);
-  let newSpeedStat = Math.floor(Math.random()*999);
-  let newAbilityStat = abilities[ Math.floor(Math.random()*abilities.length)];
-  
+
+  let newAttackStat = Math.floor(Math.random() * 999);
+  let newDefenseStat = Math.floor(Math.random() * 999);
+  let newSpeedStat = Math.floor(Math.random() * 999);
+  let newAbilityStat = abilities[Math.floor(Math.random() * abilities.length)];
+
   document.getElementById("attack-Stat").innerHTML = newAttackStat;
   document.getElementById("defense-Stat").innerHTML = newDefenseStat;
   document.getElementById("speed-Stat").innerHTML = newSpeedStat;
   document.getElementById("ability-Stat").innerHTML = newAbilityStat;
-}
+};
 
 let randomizeBackground = () => {
-  let newBG = Math.floor(Math.random()*backgrounds.length);
+  let newBG = Math.floor(Math.random() * backgrounds.length);
   document.getElementById("frame").style.backgroundImage = backgrounds[newBG];
 };
 
@@ -171,6 +153,6 @@ let shuffleAll = () => {
   shuffleCharacter();
   randomizeStats();
   randomizeBackground();
-}
+};
 
 document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
