@@ -58,6 +58,7 @@ function preload() {
 function setup() {
   createCanvas(500, 500);
   noStroke();
+  noSmooth();
 
   background("#facade");
 
@@ -220,18 +221,41 @@ function generateEquipment() {
   }
   
   switch(weaponType) {
+  
   case "sword":
     WEAPON = random(swords);
     WEAPON_IMG = sword_img;
     break;
+  
   case "spear":
     WEAPON = random(spears);
     WEAPON_IMG = spear_img;
     break;
+
   case "none":
     WEAPON = "DEEZ HANDS";
     WEAPON_IMG = hand_img;
     break;
+  }
+  
+  //armor
+  switch(random(armor)) {
+  
+    case "LEATHER":
+      ARMOR = "LEATHER";
+      break;
+      
+    case "IRON":
+      ARMOR = "IRON";
+      break;
+    
+    case "SAPPHIRE";
+      ARMOR = 'SAPPHIRE';
+      break;
+    
+    case "GOLD":
+      ARMOR = 'GOLD';
+      break;
   }
 }
 
