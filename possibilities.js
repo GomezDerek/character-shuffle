@@ -48,8 +48,8 @@ var hair = [
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-11.png?v=1615957676032",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-12.png?v=1615957675957",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-13.png?v=1615957676083",
-  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-14.png?v=1615957676346",
-  ""
+  "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHair-14.png?v=1615957676346"//,
+  //""
 ];
 
 var weapon = [

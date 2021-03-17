@@ -21,6 +21,12 @@ var WEAPON_IMG;
 var ARMOR_IMG;
 var ACCESSORY_IMG;
 
+//arrays of loaded asset possibilities
+var headImages = [];
+var torsoImages = [];
+var legImages = [];
+var hairImages = [];
+
 //specific image names
 //equipment
 var sword_img;
@@ -74,6 +80,8 @@ function preload() {
   hand_img = loadImage(
     "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fgloves_01a.png?v=1615980491585"
   );
+  
+  preloadCharacterAssets();
 }
 
 function setup() {
@@ -100,6 +108,7 @@ function draw() {
     shuffleAll();
   }
   
+  drawCharacter();
   drawVariableText();
   drawStatBars();
   drawIcons();
@@ -129,13 +138,7 @@ function useTempVariables() {
   ACCESSORY = "ACCESSORY NAME";
 
   generateEquipment();
-  //images to be shuffled
-  /*
-  HEAD;
-  EYES;
-  TORSO;
-  LEGS;
-  */
+  shuffleCharacter();
 }
 
 //this will draw the updated values that are being shuffled
@@ -217,8 +220,27 @@ function shuffleAll() {
   generateEquipment();
 }
 
-//TODO: add code to shuffle the character art
-function shuffleCharacter() {}
+//shuffle the character art
+function shuffleCharacter() {
+  HEAD = random(headImages);
+  HAIR = random(hairImages);
+  TORSO = random(torsoImages);
+  LEGS = random(legImages);
+}
+
+function drawCharacter() {
+  let x = 26.5;
+  let y = 155;
+  
+  HAIR.resize(204, 250);
+  image(HAIR, x, y);
+  HEAD.resize(204, 250);
+  image(HEAD, x, y);
+  
+  image(TORSO, x, y);
+  image(LEGS, x, y);
+  
+}
 
 function generateName() {
   let ranpre = Math.floor(Math.random() * pre.length);
@@ -320,6 +342,24 @@ function shuffleEffect() {
     () => shuffling = false, 
     2000 //ms
   );
+}
+
+function preloadCharacterAssets() {
+  for(let i=0; i<head.length; i++) {
+    headImages[i] = loadImage(head[i]);
+  }
+  
+  for(let i=0; i<torso.length; i++) {
+    torsoImages[i] = loadImage(torso[i]);
+  }
+  
+  for(let i=0; i<legs.length; i++) {
+    legImages[i] = loadImage(legs[i]);
+  }
+  
+  for(let i=0; i<hair.length; i++) {
+    hairImages[i] = loadImage(hair[i]);
+  }
 }
 
 //document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
