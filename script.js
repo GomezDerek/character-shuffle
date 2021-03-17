@@ -58,7 +58,7 @@ function drawLabels() {
   text("SPEED", 262, 185);
 }
 
-//use these values in the meantime, before we implement the shuffle button
+//assign these values in the meantime, before we implement the shuffle button
 function useTempVariables() {
   NAME = "CHARACTER NAME";
   CLASS = "CLASS";
@@ -67,10 +67,9 @@ function useTempVariables() {
   DEFENSE = Math.floor(Math.random() * 999);
   SPEED = Math.floor(Math.random() * 999);
   
-  text("WEAPON NAME", 310, 275);
-  text("ARMOR NAME", 310, 321);
-  text("ACCESSORY NAME", 310, 367);
-  
+  WEAPON = "WEAPON NAME";
+  ARMOR = "ARMOR NAME";
+  ACCESSORY = "ACCESSORY NAME";
 
   //images to be shuffled
   /*
@@ -98,6 +97,10 @@ function drawVariableText() {
   text(ATTACK, 262, 102.5);
   text(DEFENSE, 262, 152.7);
   text(SPEED, 262, 205.9);
+  
+  text(WEAPON, 310, 275);
+  text(ARMOR, 310, 321);
+  text(ACCESSORY, 310, 367);
 }
 
 //the stat bars' length and color depend on the stat values
@@ -106,26 +109,32 @@ function drawStatBars() {
   let x = 300;
   
   //draw attack stat bar
+  fill( assignBarColor(ATTACK) );
   barWidth = 175 * ATTACK/999;
   rect(x, 95.4, barWidth, 16);
   
   //draw defense stat bar
+  fill( assignBarColor(DEFENSE) );
   barWidth = 175 * DEFENSE/999
   rect(x, 146, barWidth, 16);
   
   //draw speed stat bar
+  fill( assignBarColor(SPEED) );
   barWidth = 175 * SPEED/999;
   rect(x, 199, barWidth, 16);
+  
+  fill("black"); //reset color
 }
 
+//pick a color for the stat bar depending on the stat value
 function assignBarColor(statNum) {
   if(statNum <= 333) {
     return "red";
   }
-  else if() {
-
+  else if(statNum <= 666) {
+    return "yellow";
   }
   else {
-    
+    return "green";
   }
 }
