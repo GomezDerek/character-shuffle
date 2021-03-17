@@ -153,6 +153,10 @@ function shuffleAll() {
   //generate stats
   
   //generate equipment
+  //weapon 
+  let weaponTypes = ["sword", "spear"];
+  WEAPON_TYPE = random(weaponTypes);
+  WEAPON = WEAPON_TYPE == "sword"
   
   
 }
