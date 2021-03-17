@@ -1,3 +1,15 @@
+function setup() {
+  createCanvas(500, 500);
+  
+}
+
+function draw() {
+  
+}
+
+
+
+//asset arrays 
 let head = [
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-1.png?v=1615870467294",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FHead-2.png?v=1615870551798",
@@ -112,65 +124,3 @@ let lsuf = [
   "ak",
   ""
 ];
-
-let shuffleCharacter = () => {
-  console.log("shuffleCharacter called");
-  let characterDisplay = document.getElementById("character-display");
-  let legsDisplay = document.getElementById("legs-display");
-  let torsoDisplay = document.getElementById("torso-display");
-  let headDisplay = document.getElementById("head-display");
-  let hairDisplay = document.getElementById("hair-display");
-  let weaponDisplay = document.getElementById("weapon-display");
-  
-  let ranhead = Math.floor(Math.random() * head.length);
-  let rantorso = Math.floor(Math.random() * torso.length);
-  let ranlegs = Math.floor(Math.random() * legs.length);
-  let ranhair = Math.floor(Math.random() * hair.length);
-  let ranweapon = Math.floor(Math.random() * weapon.length);
-  
-  let headchar = head[ranhead];
-  let torsochar = torso[rantorso];
-  let legschar = legs[ranlegs];
-  let hairchar = hair[ranhair];
-  let weaponchar = weapon[ranweapon];
-  
-  headDisplay.src = headchar;
-  torsoDisplay.src = torsochar;
-  legsDisplay.src = legschar;
-  hairDisplay.src = hairchar;
-  weaponDisplay.src = weaponchar;
-  
-  let ranpre = Math.floor(Math.random() * pre.length);
-  let ransuf = Math.floor(Math.random() * suf.length);
-  let lnpre = Math.floor(Math.random() * lpre.length);
-  let lnsuf = Math.floor(Math.random() * lsuf.length);
-  
-  document.getElementById("full-Name").innerHTML = pre[ranpre] + suf[ransuf] + " " + lpre[lnpre] + lsuf[lnsuf];
-}
-
-let randomizeStats = () => {
-  console.log("randomizing stats");
-  
-  let newAttackStat = Math.floor(Math.random()*999);
-  let newDefenseStat = Math.floor(Math.random()*999);
-  let newSpeedStat = Math.floor(Math.random()*999);
-  let newAbilityStat = abilities[ Math.floor(Math.random()*abilities.length)];
-  
-  document.getElementById("attack-Stat").innerHTML = newAttackStat;
-  document.getElementById("defense-Stat").innerHTML = newDefenseStat;
-  document.getElementById("speed-Stat").innerHTML = newSpeedStat;
-  document.getElementById("ability-Stat").innerHTML = newAbilityStat;
-}
-
-let randomizeBackground = () => {
-  let newBG = Math.floor(Math.random()*backgrounds.length);
-  document.getElementById("frame").style.backgroundImage = backgrounds[newBG];
-};
-
-let shuffleAll = () => {
-  shuffleCharacter();
-  randomizeStats();
-  randomizeBackground();
-}
-
-document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
