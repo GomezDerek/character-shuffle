@@ -41,16 +41,14 @@ function setup() {
   image(UI_Template, 0, 0);
   drawLabels();
   useTempVariables();
+
+}
+
+function draw() {
+
   drawVariableText();
   drawStatBars();
 }
-
-/*function draw() {
-  background("#facade");
-
-  image(UI_Template, 0, 0);
-  drawLabels();
-}*/
 
 //draw stat labels (unchangeable)
 function drawLabels() {
