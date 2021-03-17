@@ -164,9 +164,29 @@ var rings = [
   "ROYAL RING"
 ];
 var necklaces = [
-  ""
+  "ENCHANTED NECKLACE",
+  "MYSTIC AMULET",
+  "DOG TAG",
+  "HOLY ROSARY",
+  "LOVER'S LOCKET",
+  "RUBY AMULET",
+  "ROYAL NECKLACE",
+  "GOLD LOCKET",
+  "MYSTIC CRYSTAL",
 ];
-var spellBooks = [""]
+var spellBooks = [
+  "ULTIMA TOME",
+  "BOOK OF UNDEAD",
+  "KUNG-FU TUTORIAL",
+  "BOOK OF SPELLS",
+  "BOOK OF SECRETS",
+  "LIGHTNING TOME",
+  "FIRE TOME",
+  "CAR MANUAL",
+  "INSTRUCTION MANUAL",
+  "ADVENTURE GUIDE",
+  "UNDERWORLD BROCHURE"
+]
 var accesories = [rings, necklaces, spellBooks];
 
 var classes = [
