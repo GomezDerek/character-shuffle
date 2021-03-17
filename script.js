@@ -85,7 +85,7 @@ function drawVariableText() {
   textSize(43);
   text(NAME, 22.5, 42);
 
-  fill("white"); //switch to white
+  fill("#FFFFFF88"); //switch colors for class and ability
 
   textSize(33);
   text(CLASS, 22.5, 77.4);

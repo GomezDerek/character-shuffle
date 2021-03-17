@@ -134,3 +134,21 @@ var rings = [];
 var necklaces = [];
 var spellBooks = []
 var accesories = [rings, necklaces, spellBooks];
+
+var classes = [
+  "GRIFTER",
+  "WARRIOR",
+  "SMUGGLER",
+  "ACADEMIC",
+  "EXOTIC DANCER",
+  "JELLYFISH TRAINER",
+  "ARTIST",
+  "BEAUTICIAN",
+  "ENGINEER",
+  "SCOUT",
+  "BOUNTY HUNTER",
+  "ANAESTHESIOLOGIST",
+  "WRESTLER",
+  "POET",
+  "WITCH"
+];
