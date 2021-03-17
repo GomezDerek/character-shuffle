@@ -100,7 +100,7 @@ function setup() {
 }
 
 function draw() {
-  background("#DDB955");
+  background("#EDD9A3");
   image(UI_Template, 0, 0);
   drawLabels();
 
