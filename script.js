@@ -66,7 +66,7 @@ function useTempVariables() {
   ATTACK = Math.floor(Math.random() * 999);
   DEFENSE = Math.floor(Math.random() * 999);
   SPEED = Math.floor(Math.random() * 999);
-  
+
   WEAPON = "WEAPON NAME";
   ARMOR = "ARMOR NAME";
   ACCESSORY = "ACCESSORY NAME";
@@ -97,7 +97,7 @@ function drawVariableText() {
   text(ATTACK, 262, 102.5);
   text(DEFENSE, 262, 152.7);
   text(SPEED, 262, 205.9);
-  
+
   text(WEAPON, 310, 275);
   text(ARMOR, 310, 321);
   text(ACCESSORY, 310, 367);
@@ -107,34 +107,32 @@ function drawVariableText() {
 function drawStatBars() {
   let barWidth;
   let x = 300;
-  
+
   //draw attack stat bar
-  fill( assignBarColor(ATTACK) );
-  barWidth = 175 * ATTACK/999;
+  fill(assignBarColor(ATTACK));
+  barWidth = (175 * ATTACK) / 999;
   rect(x, 95.4, barWidth, 16);
-  
+
   //draw defense stat bar
-  fill( assignBarColor(DEFENSE) );
-  barWidth = 175 * DEFENSE/999
+  fill(assignBarColor(DEFENSE));
+  barWidth = (175 * DEFENSE) / 999;
   rect(x, 146, barWidth, 16);
-  
+
   //draw speed stat bar
-  fill( assignBarColor(SPEED) );
-  barWidth = 175 * SPEED/999;
+  fill(assignBarColor(SPEED));
+  barWidth = (175 * SPEED) / 999;
   rect(x, 199, barWidth, 16);
-  
+
   fill("black"); //reset color
 }
 
 //pick a color for the stat bar depending on the stat value
 function assignBarColor(statNum) {
-  if(statNum <= 333) {
+  if (statNum <= 333) {
     return "red";
-  }
-  else if(statNum <= 666) {
+  } else if (statNum <= 666) {
     return "yellow";
-  }
-  else {
+  } else {
     return "green";
   }
 }
@@ -142,29 +140,25 @@ function assignBarColor(statNum) {
 //this shuffles the character's assets and everything else
 function shuffleAll() {
   shuffleCharacter();
- 
+
   //generate name
   NAME = generateName();
-  
+
   //generate class
-  
+
   //generate ability
-  
+
   //generate stats
-  
+
   //generate equipment
-  //weapon 
+  //weapon
   let weaponTypes = ["sword", "spear"];
   WEAPON_TYPE = random(weaponTypes);
-  WEAPON = WEAPON_TYPE == "sword"
-  
-  
+  WEAPON = WEAPON_TYPE == "sword";
 }
 
 //TODO: add code to shuffle the character art
-function shuffleCharacter() {
-
-}
+function shuffleCharacter() {}
 
 function generateName() {
   let ranpre = Math.floor(Math.random() * pre.length);
@@ -175,3 +169,5 @@ function generateName() {
   let fullName = pre[ranpre] + suf[ransuf] + " " + lpre[lnpre] + lsuf[lnsuf];
   return fullName;
 }
+
+document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
