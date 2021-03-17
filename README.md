@@ -1,23 +1,22 @@
-Welcome to Glitch
-=================
+# Character Shuffle
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This project uses a generator to pull from pre-made assets and form a unique pixel character.
+Complete with Stats and an inventory.
+All you need to do is click generate and voila your character is made.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+Over **3000** unique generations!
 
-Find out more [about Glitch](https://glitch.com/about).
+*created by Aaron Harrison, placeholder, placeholder, placeholder*
 
-
-Your Project
-------------
+## Your Project
 
 ### ← README.md
 
-That's this file, where you can tell people what your cool website does and how you built it.
+Explains the generator and the people responsible for its creation
 
 ### ← index.html
 
-Where you'll write the content of your website. 
+Where you'll write the content of your website.
 
 ### ← style.css
 
@@ -29,9 +28,8 @@ If you're feeling fancy you can add interactivity to your site with JavaScript.
 
 ### ← assets
 
-Drag in `assets`, like images or music, to add them to your project
+Where our assets are pulled from for generation
 
-Made by [Glitch](https://glitch.com/)
--------------------
+## Made by [Glitch](https://glitch.com/)
 
-\ ゜o゜)ノ
+\ ゜ o ゜)ノ
