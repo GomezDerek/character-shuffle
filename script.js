@@ -45,8 +45,10 @@ function draw() {
 
   useTempVariables();
   drawVariableText();
+  drawStatBars();
 }
 
+//draw stat labels (unchangeable)
 function drawLabels() {
   //stats
   textSize(28);
@@ -54,12 +56,9 @@ function drawLabels() {
   text("ATTACK:", 262, 80);
   text("DEFENSE:", 262, 132.5);
   text("SPEED:", 262, 185);
-  
-  text("WEAPON NAME", 310, 275);
-  text("ARMOR NAME", 310, 321);
-  text("ACCESSORY NAME", 310, 367);
 }
 
+//use these values in the meantime, before we implement the shuffle button
 function useTempVariables() {
   NAME = "CHARACTER NAME";
   CLASS = "CLASS";
@@ -67,7 +66,10 @@ function useTempVariables() {
   ATTACK = Math.floor(Math.random() * 999);
   DEFENSE = Math.floor(Math.random() * 999);
   SPEED = Math.floor(Math.random() * 999);
-  //Weapon Name;
+  
+  text("WEAPON NAME", 310, 275);
+  text("ARMOR NAME", 310, 321);
+  text("ACCESSORY NAME", 310, 367);
   
 
   //images to be shuffled
@@ -79,6 +81,7 @@ function useTempVariables() {
   */
 }
 
+//this will draw the updated values that are being shuffled
 function drawVariableText() {
   textSize(43);
   text(NAME, 22.5, 42);
@@ -97,10 +100,17 @@ function drawVariableText() {
   text(SPEED, 262, 205.9);
 }
 
+//the stat bars' length and color depend on the stat values
 function drawStatBars() {
-  let attackBar;
-  let defenseBar;
-  let 
+  let barWidth;
   
+  //draw attack stat bar
+  barWidth = 175 * 
+  
+  //draw defense stat bar
+  let defenseBar;
+  
+  //draw speed stat bar
+  let speedBar;
 }
 
