@@ -53,9 +53,10 @@ var hair = [
 ];
 
 var weapon = [
+  /*"",
   "",
   "",
-  "",
+  */
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FWeapon-1.png?v=1615873003545",
   "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FWeapon-2.png?v=1615873334505"
 ];

@@ -20,12 +20,14 @@ var LEGS;
 var WEAPON_IMG;
 var ARMOR_IMG;
 var ACCESSORY_IMG;
+var HOLDING;
 
 //arrays of loaded asset possibilities
 var headImages = [];
 var torsoImages = [];
 var legImages = [];
 var hairImages = [];
+var holdingImages = [];
 
 //specific image names
 //equipment
@@ -245,6 +247,11 @@ function drawCharacter() {
 
   LEGS.resize(0, height);
   image(LEGS, x, y);
+  
+  if(HOLDING != undefined) {
+    HOLDING.resize(0, height);
+    image(HOLDING, x, y);
+  }
 }
 
 function generateName() {
@@ -272,16 +279,19 @@ function generateEquipment() {
   case "sword":
     WEAPON = random(swords);
     WEAPON_IMG = sword_img;
+    HOLDING = holdingImages[1];
     break;
 
   case "spear":
     WEAPON = random(spears);
     WEAPON_IMG = spear_img;
+    HOLDING = holdingImages[0];
     break;
 
   case "none":
     WEAPON = "DEEZ HANDS";
     WEAPON_IMG = hand_img;
+    HOLDING = undefined;
     break;
   }
 
@@ -365,6 +375,10 @@ function preloadCharacterAssets() {
   for (let i = 0; i < hair.length; i++) {
     hairImages[i] = loadImage(hair[i]);
   }
+  
+   for (let i = 0; i < weapon.length; i++) {
+    holdingImages[i] = loadImage(weapon[i]);
+  } 
 }
 
 //document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
