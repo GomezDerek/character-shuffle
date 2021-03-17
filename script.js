@@ -8,12 +8,18 @@ var ABILITY;
 var ATTACK;
 var DEFENSE;
 var SPEED;
+var WEAPON;
+var ARMOR;
+var ACCESSORY;
 
 //images to be shuffled
 var HEAD;
 var EYES;
 var TORSO;
 var LEGS;
+var WEAPON_TYPE;
+var ARMOR_TYPE;
+var ACCESSORY_TYPE;
 
 function preload() {
   UI_Template = loadImage(
@@ -48,9 +54,10 @@ function drawLabels() {
   text("ATTACK:", 262, 80);
   text("DEFENSE:", 262, 132.5);
   text("SPEED:", 262, 185);
-  text("SPEED:", 350, 270);
-  text("SPEED:", 350, 300);
-  text("SPEED:", 350, 330);
+  
+  text("WEAPON NAME:", 31H0, 270);
+  text("ARMOR NAME:", 350, 300);
+  text("ACCESSORY NAME:", 350, 330);
 }
 
 function useTempVariables() {
@@ -58,8 +65,8 @@ function useTempVariables() {
   CLASS = "CLASS";
   ABILITY = "ABILITY";
   ATTACK = Math.floor(Math.random() * 999);
-  DEFENSE = 999;
-  SPEED = 333;
+  DEFENSE = Math.floor(Math.random() * 999);
+  SPEED = Math.floor(Math.random() * 999);
   //Weapon Name;
   
 
