@@ -85,7 +85,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(500, 425);
   noStroke();
   noSmooth();
 
@@ -100,7 +100,7 @@ function setup() {
 }
 
 function draw() {
-  background("#facade");
+  background("#DDB955");
   image(UI_Template, 0, 0);
   drawLabels();
 
@@ -229,10 +229,10 @@ function shuffleCharacter() {
 }
 
 function drawCharacter() {
-  let x = -50;
+  let x = -100;
   let y = 0;
   let width = 306;
-  let height = 375;
+  let height = 400;
 
   HEAD.resize(0, height);
   image(HEAD, x, y);
@@ -269,62 +269,62 @@ function generateEquipment() {
   }
 
   switch (weaponType) {
-    case "sword":
-      WEAPON = random(swords);
-      WEAPON_IMG = sword_img;
-      break;
+  case "sword":
+    WEAPON = random(swords);
+    WEAPON_IMG = sword_img;
+    break;
 
-    case "spear":
-      WEAPON = random(spears);
-      WEAPON_IMG = spear_img;
-      break;
+  case "spear":
+    WEAPON = random(spears);
+    WEAPON_IMG = spear_img;
+    break;
 
-    case "none":
-      WEAPON = "DEEZ HANDS";
-      WEAPON_IMG = hand_img;
-      break;
+  case "none":
+    WEAPON = "DEEZ HANDS";
+    WEAPON_IMG = hand_img;
+    break;
   }
 
   //armor
   switch (random(armor)) {
-    case "LEATHER":
-      ARMOR = "LEATHER ARMOR";
-      ARMOR_IMG = leather_img;
-      break;
+  case "LEATHER":
+    ARMOR = "LEATHER ARMOR";
+    ARMOR_IMG = leather_img;
+    break;
 
-    case "IRON":
-      ARMOR = "IRON ARMOR";
-      ARMOR_IMG = iron_img;
-      break;
+  case "IRON":
+    ARMOR = "IRON ARMOR";
+    ARMOR_IMG = iron_img;
+    break;
 
-    case "SAPPHIRE":
-      ARMOR = "CRYSTAL ARMOR";
-      ARMOR_IMG = sapphire_img;
-      break;
+  case "SAPPHIRE":
+    ARMOR = "CRYSTAL ARMOR";
+    ARMOR_IMG = sapphire_img;
+    break;
 
-    case "GOLD":
-      ARMOR = "GOLD ARMOR";
-      ARMOR_IMG = gold_img;
-      break;
+  case "GOLD":
+    ARMOR = "GOLD ARMOR";
+    ARMOR_IMG = gold_img;
+    break;
   }
 
   //accessories
   let accessoryType = random(["necklace", "ring", "spellBook"]);
   switch (accessoryType) {
-    case "necklace":
-      ACCESSORY = random(necklaces);
-      ACCESSORY_IMG = necklace_img;
-      break;
+  case "necklace":
+    ACCESSORY = random(necklaces);
+    ACCESSORY_IMG = necklace_img;
+    break;
 
-    case "ring":
-      ACCESSORY = random(rings);
-      ACCESSORY_IMG = ring_img;
-      break;
+  case "ring":
+    ACCESSORY = random(rings);
+    ACCESSORY_IMG = ring_img;
+    break;
 
-    case "spellBook":
-      ACCESSORY = random(spellBooks);
-      ACCESSORY_IMG = book_img;
-      break;
+  case "spellBook":
+    ACCESSORY = random(spellBooks);
+    ACCESSORY_IMG = book_img;
+    break;
   }
 }
 
