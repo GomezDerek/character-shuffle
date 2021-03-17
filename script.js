@@ -22,16 +22,16 @@ var ARMOR_TYPE;
 var ACCESSORY_TYPE;
 
 //specific image names
+//equipment
 var sword_img;
 var spear_img;
-
 var ring_img;
 var necklace_img;
 var book_img;
-
 var leather_img;
 var iron_img;
-var sapphite-
+var sapphire_img;
+var gold_img;
 
 function preload() {
   UI_Template = loadImage(
@@ -41,6 +41,15 @@ function preload() {
     "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fmonaco.ttf?v=1615959404499"
   );
   
+  sword_img = loadImage("");
+  spear_img = loadImage("");
+  ring_img = loadImage("");
+  necklace_img = loadImage("");
+  book_img = loadImage("");
+  leather_img = loadImage("");
+  iron_img = loadImage("");
+  sapphire_img = loadImage("");
+  gold_img = loadImage("");
   
 }
 
