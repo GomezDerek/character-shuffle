@@ -23,7 +23,7 @@ function preload() {
 function setup() {
   createCanvas(500, 500);
   
-  //textFont(font);
+  textFont(font);
   //textSize(fontsize);
   textAlign(LEFT, CENTER);
 }
@@ -33,9 +33,14 @@ function draw() {
   
   image(UI_Template, 0, 0);
   drawTemplateText();
+  drawTemporaryShuffle();
 }
 
-function drawTemplateText() {
-  let textColor = "black";
-  
+function drawLabels() {
+  //stats
+  textSize(28);
+  strokeWeight(1);
+  text('ATTACK', 262, 80);
+  text("DEFENSE", 262, 132.5);
+  text("SPEED", 262, 185);
 }
