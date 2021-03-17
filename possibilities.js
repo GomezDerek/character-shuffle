@@ -151,9 +151,22 @@ var armor = [
   "GOLD"
 ];
 
-var rings = [];
-var necklaces = [];
-var spellBooks = []
+var rings = [
+  "POWER RING",
+  "CHAMPIONSHIP RING",
+  "WOODEN RING",
+  "MOOD RING",
+  "FRIENDSHIP RING",
+  "DARK RING",
+  "ELEMENTAL RING",
+  "SILVER RING",
+  "KNIGHT'S RING",
+  "ROYAL RING"
+];
+var necklaces = [
+  ""
+];
+var spellBooks = [""]
 var accesories = [rings, necklaces, spellBooks];
 
 var classes = [

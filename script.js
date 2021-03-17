@@ -276,30 +276,26 @@ function generateEquipment() {
   }
   
   //accessories
-  let accessoryType = random(["necklace", "ring", ""])
-  switch (random(accessories)) {
-  case "NECKLACS":
-    ACCESSORY = "NECKLACS";
+  let accessoryType = random(["necklace", "ring", "spellBook"])
+  switch (accessoryType) {
+  case "necklace":
+    ACCESSORY = random(necklaces);
     ACCESSORY_IMG = necklace_img;
     break;
 
-  case "RING":
-    ACCESSORY = "RING";
+  case "ring":
+    ACCESSORY = random(rings);
     ACCESSORY_IMG = ring_img;
     break;
 
-  case "SAPPHIRE":
-    ACCESSORY = "SAPPHIRE";
+  case "spellbook":
+    ACCESSORY = random(spellBooks);
     ACCESSORY_IMG = sapphire_img;
-    break;
-
-  case "GOLD":
-    ACCESSORY = "GOLD";
-    ACCESSORY_IMG = gold_img;
     break;
   }
 }
 
+//draw the equipment icons
 function drawIcons() {
   WEAPON_IMG.resize(36, 36);
   image(WEAPON_IMG, 258, 258);
