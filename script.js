@@ -235,20 +235,20 @@ function drawCharacter() {
   let height = 400;
 
   HEAD.resize(0, height);
-  image(HEAD, x, y);
+  image(HEAD, x, addBounce(y));
 
   HAIR.resize(0, height);
-  image(HAIR, x, y);
+  image(HAIR, x, addBounce(y));
 
   TORSO.resize(0, height);
-  image(TORSO, x, y);
+  image(TORSO, x, addBounce(y));
 
   LEGS.resize(0, height);
   image(LEGS, x, y);
   
   if(HOLDING != undefined) {
     HOLDING.resize(0, height);
-    image(HOLDING, x, y);
+    image(HOLDING, x, addBounce(y));
   }
 }
 
@@ -379,10 +379,11 @@ function preloadCharacterAssets() {
   } 
 }
 
-function bounceAnimation(asset) {
-  //HEAD HAIR TORSO
-  let bounce = 2*sin((PI*2* millis()) / 45.0)
-  
+//this will add a little idle animation to our character!
+//to be used on the y values of HEAD, HAIR, TORSO, & HAND
+function addBounce(y) {
+  let bounce = 2*sin((PI*2* millis()) / 2500.0);
+  return y + bounce;
 }
 
 //document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
