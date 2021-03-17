@@ -144,7 +144,12 @@ var spears = [
 ];
 var weapons = [swords, spears];
 
-var armor = [];
+var armor = [
+  "LEATHER",
+  "IRON",
+  "SAPPHIRE",
+  "GOLD"
+];
 
 var rings = [];
 var necklaces = [];

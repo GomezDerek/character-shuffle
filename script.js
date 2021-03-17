@@ -32,6 +32,7 @@ function preload() {
 
 function setup() {
   createCanvas(500, 500);
+  noStroke();
 
   background("#facade");
 
@@ -183,17 +184,29 @@ function generateName() {
 }
 
 function generateEquipment() {
-  let weaponTypes = ["sword", "spear"];
-  WEAPON_TYPE = random(weaponTypes);
-  WEAPON = WEAPON_TYPE == "sword" ? random(swords) : random(spears);
   
-  //add 15% chance you have no weapon
+  //weapons
+  //15% chance you have no weapon
   if(Math.random() * 10 < 1.5) {
     WEAPON_TYPE = "none";
-    WEAPON = "DEEZ HANDS";
+    
+  }
+  else {
+    let weaponTypes = ["sword", "spear"];
+    WEAPON_TYPE = random(weaponTypes);
   }
   
-  
+  switch(WEAPON_TYPE) {
+  case "sword":
+    WEAPON = random(swords);
+    break;
+  case "spear":
+    WEAPON = random(spears);
+    break;
+  case "none":
+    WEAPON = "DEEZ HANDS";
+    break;
+  }
 }
 
 document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
