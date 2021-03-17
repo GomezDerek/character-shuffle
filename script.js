@@ -249,7 +249,7 @@ function drawCharacter() {
   TORSO.resize(0, height);
   image(TORSO, x, bounce);
   
-  
+  //draw the weapon too, if one is equipped in the stats
   if(HOLDING != undefined) {
     HOLDING.resize(0, height);
     image(HOLDING, x, bounce);
@@ -269,8 +269,8 @@ function generateName() {
 function generateEquipment() {
   //weapons
   let weaponType;
-  //15% chance you have no weapon
-  if (Math.random() * 10 < 1.5) {
+  //20% chance you have no weapon
+  if (Math.random() * 10 <= 2.0) {
     weaponType = "none";
   } else {
     let weaponTypes = ["sword", "spear"];
