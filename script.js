@@ -313,4 +313,14 @@ function drawIcons() {
   image(ACCESSORY_IMG, 258, 349);
 }
 
-document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
+//let draw() continuously shuffle everything for 2 seconda before stopping
+function shuffleEffect() {
+  shuffling = true;
+  window.setTimeout(
+    () => shuffling = false, 
+    2000 //ms
+  );
+}
+
+//document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
+document.getElementById("shuffle-button").addEventListener("click", shuffleEffect);

@@ -197,7 +197,7 @@ var spellBooks = [
   "INSTRUCTIONS",
   "ADVENTURE GUIDE",
   "HELL'S BROCHURE",
-  "LOVE LETTER"
+  "LOVE LETTERS"
 ]
 var accesories = [rings, necklaces, spellBooks];
 
