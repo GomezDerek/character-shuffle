@@ -44,6 +44,8 @@ var hand_img;
 
 var shuffling = false;
 
+
+
 function preload() {
   UI_Template = loadImage(
     "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FBlank%20UI.png?v=1615957385261"
@@ -230,25 +232,27 @@ function shuffleCharacter() {
 
 function drawCharacter() {
   let x = -100;
-  let y = 0;
-  let width = 306;
   let height = 400;
-
-  HEAD.resize(0, height);
-  image(HEAD, x, addBounce(y));
-
-  HAIR.resize(0, height);
-  image(HAIR, x, addBounce(y));
-
-  TORSO.resize(0, height);
-  image(TORSO, x, addBounce(y));
+  
+  //bounce will be used for character's upper body y values
+  let bounce = 2*Math.sin((PI*2* millis()) / 2500.0) + 5;
 
   LEGS.resize(0, height);
-  image(LEGS, x, y);
+  image(LEGS, x, 0);
+  
+  HEAD.resize(0, height);
+  image(HEAD, x, bounce);
+
+  HAIR.resize(0, height);
+  image(HAIR, x, bounce);
+
+  TORSO.resize(0, height);
+  image(TORSO, x, bounce);
+  
   
   if(HOLDING != undefined) {
     HOLDING.resize(0, height);
-    image(HOLDING, x, addBounce(y));
+    image(HOLDING, x, bounce);
   }
 }
 
@@ -377,13 +381,6 @@ function preloadCharacterAssets() {
    for (let i = 0; i < weapon.length; i++) {
     holdingImages[i] = loadImage(weapon[i]);
   } 
-}
-
-//this will add a little idle animation to our character!
-//to be used on the y values of HEAD, HAIR, TORSO, & HAND
-function addBounce(y) {
-  let bounce = 2*sin((PI*2* millis()) / 2500.0);
-  return y + bounce;
 }
 
 //document.getElementById("shuffle-button").addEventListener("click", shuffleAll);
