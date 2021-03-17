@@ -172,5 +172,6 @@ var classes = [
   "WRESTLER",
   "POET",
   "WITCH",
-  "LIZARD TAMER"
+  "LIZARD TAMER",
+  "NINJA"
 ];
