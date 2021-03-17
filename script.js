@@ -36,7 +36,9 @@ function draw() {
 
   image(UI_Template, 0, 0);
   drawLabels();
-  drawTemporaryText();
+  
+  useTempVariables();
+  drawVariableText();
 }
 
 function drawLabels() {
@@ -54,26 +56,36 @@ function useTempVariables() {
   ABILITY = "ABILITY";
   ATTACK = 666;
   DEFENSE = 999;
-  var SPEED=;
+  SPEED = 333;
 
   //images to be shuffled
-  var HEAD;
-  var EYES;
-  var TORSO;
-  var LEGS;
+  /*
+  HEAD;
+  EYES;
+  TORSO;
+  LEGS;
+  */
 }
 
-function drawTemporaryText() {
+function drawVariableText() {
   //name 
   textSize(43);
-  text("CHARACTER NAME", 22.5, 42);
+  text(NAME, 22.5, 42);
   
   //class
   fill("white"); //draw this text in white
   textSize(33);
-  text("CLASS", 22.5, 77.4);
+  text(CLASS, 22.5, 77.4);
   
   //ability
-  text("ABILITY", 50, 100);
+  text(ABILITY, 50, 100);
   fill("black"); //switch back to black
+  
+  //attack
+  
+  
+  //defense
+  
+  //speed
+  
 }
