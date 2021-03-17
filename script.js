@@ -53,9 +53,9 @@ function drawLabels() {
   //stats
   textSize(28);
   strokeWeight(1);
-  text("ATTACK:", 262, 80);
-  text("DEFENSE:", 262, 132.5);
-  text("SPEED:", 262, 185);
+  text("ATTACK", 262, 80);
+  text("DEFENSE", 262, 132.5);
+  text("SPEED", 262, 185);
 }
 
 //use these values in the meantime, before we implement the shuffle button
@@ -103,14 +103,29 @@ function drawVariableText() {
 //the stat bars' length and color depend on the stat values
 function drawStatBars() {
   let barWidth;
+  let x = 300;
   
   //draw attack stat bar
-  barWidth = 175 * 
+  barWidth = 175 * ATTACK/999;
+  rect(x, 95.4, barWidth, 16);
   
   //draw defense stat bar
-  let defenseBar;
+  barWidth = 175 * DEFENSE/999
+  rect(x, 146, barWidth, 16);
   
   //draw speed stat bar
-  let speedBar;
+  barWidth = 175 * SPEED/999;
+  rect(x, 199, barWidth, 16);
 }
 
+function assignBarColor(statNum) {
+  if(statNum <= 333) {
+    return "red";
+  }
+  else if() {
+
+  }
+  else {
+    
+  }
+}
