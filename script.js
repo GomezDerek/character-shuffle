@@ -32,12 +32,12 @@ function preload() {
 
 function setup() {
   createCanvas(500, 500);
-  
-  background("#facade");
 
+  background("#facade");
 
   textFont(font);
   textAlign(LEFT, CENTER);
+  
   image(UI_Template, 0, 0);
   drawLabels();
   useTempVariables();
@@ -149,16 +149,24 @@ function shuffleAll() {
   NAME = generateName();
 
   //generate class
+  CLASS = random(classes);
 
   //generate ability
+  ABILITY = random(abilities);
 
   //generate stats
+  ATTACK = Math.floor(Math.random() * 999);
+  DEFENSE = Math.floor(Math.random() * 999);
+  SPEED = Math.floor(Math.random() * 999);
 
   //generate equipment
+  
   //weapon
   let weaponTypes = ["sword", "spear"];
   WEAPON_TYPE = random(weaponTypes);
-  WEAPON = WEAPON_TYPE == "sword";
+  WEAPON = WEAPON_TYPE == "sword" ? random(swords) : random(spears);
+  
+  
 }
 
 //TODO: add code to shuffle the character art
