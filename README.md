@@ -7,3 +7,6 @@ All you need to do is click generate and voila your character is made.
 Over **3000** unique generations!
 
 *created by Aaron Harrison, Derek Gomez, Jake Nguyen, Baoqing Xie*
+
+Equipment icons from https://kyrise.itch.io/kyrises-free-16x16-rpg-icon-pack
+Licensed under Creative Commons Attribution 4.0 International
