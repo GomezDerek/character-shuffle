@@ -214,9 +214,9 @@ function shuffleAll() {
   ABILITY = random(abilities);
 
   //generate stats
-  ATTACK = Math.floor(Math.random() * 999);
-  DEFENSE = Math.floor(Math.random() * 999);
-  SPEED = Math.floor(Math.random() * 999);
+  ATTACK = Math.floor(Math.random() * 1000);
+  DEFENSE = Math.floor(Math.random() * 1000);
+  SPEED = Math.floor(Math.random() * 1000);
 
   //generate equipment
   generateEquipment();
