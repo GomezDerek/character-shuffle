@@ -48,41 +48,41 @@ var shuffling = false;
 
 function preload() {
   UI_Template = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2FBlank%20UI.png?v=1615957385261"
+    "/assets/Blank%20UI.png"
   );
   font = loadFont(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fmonaco.ttf?v=1615959404499"
+    "/assets/monaco.ttf"
   );
 
   sword_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fsword_02b.png?v=1615980533861"
+    "/assets/sword_02b.png"
   );
   spear_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fstaff_01e.png?v=1615980573580"
+    "/assets/staff_01e.png"
   );
   ring_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fring_02b.png?v=1615980624386"
+    "/assets/ring_02b.png"
   );
   necklace_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fnecklace_02b.png?v=1615980664799"
+    "/assets/necklace_02b.png"
   );
   book_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fbook_01g.png?v=1615980684120"
+    "/assets/book_01g.png"
   );
   leather_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01a.png?v=1615981168385"
+    "/assets/armor_01a.png"
   );
   iron_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01b.png?v=1615981172839"
+    "/assets/armor_01b.png"
   );
   sapphire_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01c.png?v=1615981172555"
+    "/assets/armor_01c.png"
   );
   gold_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Farmor_01d.png?v=1615981172706"
+    "/assets/armor_01d.png"
   );
   hand_img = loadImage(
-    "https://cdn.glitch.com/c63601e5-6192-466b-b298-6eed54a118ab%2Fgloves_01a.png?v=1615980491585"
+    "/assets/gloves_01a.png"
   );
 
   preloadCharacterAssets();
