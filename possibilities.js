@@ -1,54 +1,54 @@
 var head = [
-  "/assets/Head-1.png",
-  "/assets/Head-2.png",
-  "/assets/Head-3.png",
-  "/assets/Head-4.png",
-  "/assets/Head-5.png",
-  "/assets/Head-6.png",
-  "/assets/Head-7.png",
-  "/assets/Head-8.png",
-  "/assets/Head-9.png",
-  "/assets/Head-10.png",
-  "/assets/Head-11.png"
+  "assets/Head-1.png",
+  "assets/Head-2.png",
+  "assets/Head-3.png",
+  "assets/Head-4.png",
+  "assets/Head-5.png",
+  "assets/Head-6.png",
+  "assets/Head-7.png",
+  "assets/Head-8.png",
+  "assets/Head-9.png",
+  "assets/Head-10.png",
+  "assets/Head-11.png"
 ];
 
 var torso = [
-  "/assets/Torso-1.png",
-  "/assets/Torso-2.png",
-  "/assets/Torso-3.png",
-  "/assets/Torso-4.png",
-  "/assets/Torso-5.png",
-  "/assets/Torso-6.png",
-  "/assets/Torso-7.png",
-  "/assets/Torso-8.png"
+  "assets/Torso-1.png",
+  "assets/Torso-2.png",
+  "assets/Torso-3.png",
+  "assets/Torso-4.png",
+  "assets/Torso-5.png",
+  "assets/Torso-6.png",
+  "assets/Torso-7.png",
+  "assets/Torso-8.png"
 ];
 
 var legs = [
-  "/assets/Leg-1.png",
-  "/assets/Leg-2.png",
-  "/assets/Leg-3.png",
-  "/assets/Leg-4.png",
-  "/assets/Leg-5.png",
-  "/assets/Legs-6.png",
-  "/assets/Legs-7.png",
-  "/assets/Legs-8.png"
+  "assets/Leg-1.png",
+  "assets/Leg-2.png",
+  "assets/Leg-3.png",
+  "assets/Leg-4.png",
+  "assets/Leg-5.png",
+  "assets/Legs-6.png",
+  "assets/Legs-7.png",
+  "assets/Legs-8.png"
 ];
 
 var hair = [
-  "/assets/Hair-1.png",
-  "/assets/Hair-2.png",
-  "/assets/Hair-3.png",
-  "/assets/Hair-4.png",
-  "/assets/Hair-5.png",
-  "/assets/Hair-6.png",
-  "/assets/Hair-7.png",
-  "/assets/Hair-8.png",
-  "/assets/Hair-9.png",
-  "/assets/Hair-10.png",
-  "/assets/Hair-11.png",
-  "/assets/Hair-12.png",
-  "/assets/Hair-13.png",
-  "/assets/Hair-14.png"//,
+  "assets/Hair-1.png",
+  "assets/Hair-2.png",
+  "assets/Hair-3.png",
+  "assets/Hair-4.png",
+  "assets/Hair-5.png",
+  "assets/Hair-6.png",
+  "assets/Hair-7.png",
+  "assets/Hair-8.png",
+  "assets/Hair-9.png",
+  "assets/Hair-10.png",
+  "assets/Hair-11.png",
+  "assets/Hair-12.png",
+  "assets/Hair-13.png",
+  "assets/Hair-14.png"//,
   //""
 ];
 
@@ -57,8 +57,8 @@ var weapon = [
   "",
   "",
   */
-  "/assets/Weapon-1.png",
-  "/assets/Weapon-2.png"
+  "assets/Weapon-1.png",
+  "assets/Weapon-2.png"
 ];
 
 

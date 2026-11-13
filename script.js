@@ -48,41 +48,41 @@ var shuffling = false;
 
 function preload() {
   UI_Template = loadImage(
-    "/assets/Blank%20UI.png"
+    "assets/Blank%20UI.png"
   );
   font = loadFont(
-    "/assets/monaco.ttf"
+    "assets/monaco.ttf"
   );
 
   sword_img = loadImage(
-    "/assets/sword_02b.png"
+    "assets/sword_02b.png"
   );
   spear_img = loadImage(
-    "/assets/staff_01e.png"
+    "assets/staff_01e.png"
   );
   ring_img = loadImage(
-    "/assets/ring_02b.png"
+    "assets/ring_02b.png"
   );
   necklace_img = loadImage(
-    "/assets/necklace_02b.png"
+    "assets/necklace_02b.png"
   );
   book_img = loadImage(
-    "/assets/book_01g.png"
+    "assets/book_01g.png"
   );
   leather_img = loadImage(
-    "/assets/armor_01a.png"
+    "assets/armor_01a.png"
   );
   iron_img = loadImage(
-    "/assets/armor_01b.png"
+    "assets/armor_01b.png"
   );
   sapphire_img = loadImage(
-    "/assets/armor_01c.png"
+    "assets/armor_01c.png"
   );
   gold_img = loadImage(
-    "/assets/armor_01d.png"
+    "assets/armor_01d.png"
   );
   hand_img = loadImage(
-    "/assets/gloves_01a.png"
+    "assets/gloves_01a.png"
   );
 
   preloadCharacterAssets();
