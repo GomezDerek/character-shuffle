@@ -6,7 +6,7 @@ All you need to do is click generate and voila your character is made.
 
 Over **3000** unique generations!
 
-Try it for yourself by visiting the live deployment: [https://character-shuffle.glitch.me](https://character-shuffle.glitch.me) or by clicking the `🔎PREVIEW` button in the bottom toolbar
+Try it for yourself by visiting the live deployment: [https://derekgomez.dev/games/character-shuffle](https://derekgomez.dev/games/character-shuffle) 
 
 *created by Aaron Harrison, Derek Gomez, Jake Nguyen, Baoqing Xie*
 
